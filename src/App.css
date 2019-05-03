@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -30,4 +30,22 @@
   to {
     transform: rotate(360deg);
   }
+}  */
+
+.grey-back {
+  width: 245px;
+  height: 768px;
+  background-color: #eeece6;
+}
+
+.orange-back {
+  width: 1024px;
+  height: 768px;
+  background-color: #fac105;
+}
+
+.logoBQ {
+  width: 230px;
+  height: 327px;
+  object-fit: contain;
 }
