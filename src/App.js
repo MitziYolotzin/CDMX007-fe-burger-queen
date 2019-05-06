@@ -22,11 +22,11 @@ function App() {
       </header>
     </div>  */
 
-<div className="orange-back">
-<div className="grey-back">
+<section className="orange-back">
+<section className="grey-back">
 <img src={logoBQ} className="logoBQ" alt="logo" />
-</div>
-</div>
+</section>
+</section>
 
 
   );
