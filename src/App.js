@@ -1,35 +1,44 @@
-import React from 'react';
-import logoBQ from './logoBQ.png';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import Breakfast from "./components/Breakfast";
+import Burgers from "./components/Burgers";
+//import Error from "./components/Error";
+import Nav from "./components/Navbar";
+//import logo from './logo.svg';
 import './App.css';
+//import logoBQ from './logoBQ.png';
 
-function App() {
+// p1 Prueba Ruta1
+/*const newRoute = () => {
   return (
-   /* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>  */
-
-<section className="orange-back">
-<section className="grey-back">
-<img src={logoBQ} className="logoBQ" alt="logo" />
+<section>
+  <p>New Route</p>
 </section>
-</section>
+  );
+} */
 
+class App extends Component {
+render (){
+  return(
+
+    <BrowserRouter>
+<Nav />
+    {/* <Route path="/new" component={newRoute} /> */}
+<Switch>
+    <Route path="/" component={Home} exact />
+    
+    <Route path="/Breakfast" component={Breakfast} />
+    <Route path="/Burgers" component={Burgers} />
+{/* <Route component={Error} /> */}
+</Switch>
+
+
+    </BrowserRouter>
 
   );
+}
+
 }
 
 export default App;
