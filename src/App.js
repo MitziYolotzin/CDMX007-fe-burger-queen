@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
+//import Home from "./components/Home";
 import Breakfast from "./components/Breakfast";
 import Burgers from "./components/Burgers";
+import Complement from "./components/Complement";
+import Drinks from "./components/Drinks";
+//import Login from "./components/Login";
 //import Error from "./components/Error";
 import Nav from "./components/Navbar";
-//import logo from './logo.svg';
-import './App.css';
-//import logoBQ from './logoBQ.png';
+
+
+
+
 
 // p1 Prueba Ruta1
 /*const newRoute = () => {
@@ -21,21 +25,24 @@ import './App.css';
 class App extends Component {
 render (){
   return(
-
     <BrowserRouter>
-<Nav />
+<section className="App">
+<Nav title="Nav" />
     {/* <Route path="/new" component={newRoute} /> */}
 <Switch>
-    <Route path="/" component={Home} exact />
-    
+    {/* <Route path="/" component={Home} exact /> */}
+    {/* <Route path="/Login" component={Login} /> */}
     <Route path="/Breakfast" component={Breakfast} />
     <Route path="/Burgers" component={Burgers} />
+    <Route path="/Drinks" component={Drinks} />
+    <Route path="/Complement" component={Complement} />
+
 {/* <Route component={Error} /> */}
+{/*<Route path="/SectionTree" render={() => <SectionTree />}/>*/}
 </Switch>
 
-
+    </section>
     </BrowserRouter>
-
   );
 }
 

@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Drink = () => {
+const Drinks = () => {
     return(
 <div>
-    <p>Drink</p>
+    <h1>Drinks</h1>
 </div>
 
     );
 };
 
-export default Drink;
+export default Drinks;

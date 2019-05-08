@@ -1,15 +1,15 @@
 import React  from 'react';
 
 
-const Complement = () => {
+const Cash = () => {
     return(
         
 <div>
-<h1>Complement</h1>
+<h1>Cash</h1>
     
 </div>
 
     );
 };
 
-export default Complement;
+export default Cash;
