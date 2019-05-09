@@ -7,10 +7,7 @@ import Complement from "./components/Complement";
 import Drinks from "./components/Drinks";
 //import Login from "./components/Login";
 //import Error from "./components/Error";
-import Navbar from "./components/Navbar";
-
-
-
+import  Navbar from "./components/Navbar";
 
 
 // p1 Prueba Ruta1
@@ -28,6 +25,7 @@ render (){
     <BrowserRouter>
 <section className="App">
 <Navbar title="Nav" />
+
     {/* <Route path="/new" component={newRoute} /> */}
 <Switch>
     {/* <Route path="/" component={Home} exact /> */}

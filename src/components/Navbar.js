@@ -18,10 +18,25 @@ return (
 <li><NavLink className="nav-menu-link" to ="/Drinks">Bebidas</NavLink></li>
 <li><NavLink className="nav-menu-link" to ="/Complement">Complementos</NavLink></li>
 </ul>
+
+{/* <section className="ticketnav">
+       <ul className="ticketnav-menu">
+           <li className="nav-ticket">Cant.</li>
+           <li className="nav-ticket">Producto</li>
+           <li className="nav-ticket">Precio</li>
+           <li className="nav-ticket">Total</li>
+       </ul>
+   </section> */}
+
     </section>
+
+
 );
 
 }
 
+
+    
 export default Navbar;
+
 
