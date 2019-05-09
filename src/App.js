@@ -7,7 +7,7 @@ import Complement from "./components/Complement";
 import Drinks from "./components/Drinks";
 //import Login from "./components/Login";
 //import Error from "./components/Error";
-import Nav from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 
 
@@ -27,7 +27,7 @@ render (){
   return(
     <BrowserRouter>
 <section className="App">
-<Nav title="Nav" />
+<Navbar title="Nav" />
     {/* <Route path="/new" component={newRoute} /> */}
 <Switch>
     {/* <Route path="/" component={Home} exact /> */}
