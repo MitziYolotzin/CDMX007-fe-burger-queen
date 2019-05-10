@@ -21,14 +21,14 @@ return (
 <li><NavLink className="nav-menu-link" to ="/Complement">Complementos</NavLink></li>
 </ul>
 
-{/* <aside className="ticketnav">
+ {/* <aside className="ticketnav">
        <ul className="ticketnav-menu">
            <li className="nav-ticket">Cant.</li>
            <li className="nav-ticket">Producto</li>
            <li className="nav-ticket">Precio</li>
-           <li className="nav-ticket">Total</li>
+           
        </ul>
-   </aside> */}
+   </aside>  */}
 
     </section>
     </section>
