@@ -6,6 +6,7 @@ import '../css/Navbar.css';
 const Navbar = () => {
 
 return (
+<section className="container-main">
 
     <section className="nav">
     <img className="iconlogoB" src={iconlogo} alt="iconlogoB" />
@@ -14,7 +15,7 @@ return (
 {/* <NavLink to="/">Home</NavLink> */}
 
 {/* <li><NavLink className="nav-menu-link" to="/Login">Login</NavLink></li> */}
-<li><NavLink className="nav-menu-link" to="/Breakfast">Desayunos</NavLink></li>
+<li><NavLink className="nav-menu-link" to ="/Breakfast">Desayunos</NavLink></li>
 <li><NavLink className="nav-menu-link" to ="/Burgers">Hamburguesas</NavLink></li>
 <li><NavLink className="nav-menu-link" to ="/Drinks">Bebidas</NavLink></li>
 <li><NavLink className="nav-menu-link" to ="/Complement">Complementos</NavLink></li>
@@ -30,7 +31,7 @@ return (
    </aside> */}
 
     </section>
-
+    </section>
 
 );
 

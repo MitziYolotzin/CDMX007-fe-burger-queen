@@ -10,9 +10,47 @@
 
   .boxed:hover {
     
-  
   border: solid 3px #721a16;
 
   }
 
+  .circle-icon{
+    
+    width: 46.6px;
+    height: 46.6px;
+    border-radius: 100px;
+    border: solid 2px #fac105;
+    margin-left: -32px; 
+  }
+
+  .name{
+    
+    height: 87px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: -62px;
+
+}
+.price{
+    
+    height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 166px;
+    margin-top: -42px;
+
+}
 
