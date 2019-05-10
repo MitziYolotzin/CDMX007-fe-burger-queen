@@ -10,7 +10,7 @@ const ButtonsBComponent = ({ img, name, price }) => (
         {/* <img className="imageB" src={img} alt="imageicon" /> */}
         </figure>
           <div className="name">{name}</div>       
-            <div className="price">$ {price} pesos</div>
+            <div className="price">$ {price} </div>
 
             </section> 
             </section>
