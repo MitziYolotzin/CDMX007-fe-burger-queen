@@ -14,6 +14,14 @@
 
   }
 
+  .imageB{
+    width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-top: -27px;
+    margin-left: -20px;
+  }
+
   .circle-icon{
     
     width: 46.6px;
@@ -21,6 +29,7 @@
     border-radius: 100px;
     border: solid 2px #fac105;
     margin-left: -32px; 
+    margin-bottom: -28px;
   }
 
   .name{

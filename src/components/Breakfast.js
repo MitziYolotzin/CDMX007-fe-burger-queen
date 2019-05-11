@@ -26,7 +26,7 @@ const BreakfastComponent = () => {
     {
       name: "Sandwich de jamón y queso",
       price: '35',
-      img: "../assets/breakfast/sandjc.png",
+      img: "https://i.ibb.co/41PcKwb/sandjc.png",
       
     },
     {
