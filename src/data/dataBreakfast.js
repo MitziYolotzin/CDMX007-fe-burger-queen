@@ -3,7 +3,7 @@ const databreakfast =  {
     "breakfast": [
         {
         "id": 1,
-        "food": "Sandwich de jamón y queso",
+        "name": "Sandwich de jamón y queso",
         "img": "../assets/breakfast/sandjc.png",
         "price": 35,
         "type" : [
@@ -12,7 +12,7 @@ const databreakfast =  {
         ]
     }, {
         "id": 2,
-        "drink": "Jugo Natural",
+        "name": "Jugo Natural",
         "img": "../assets/breakfast/orangejuice.png",
         "price": 15,
         "type" : [
@@ -22,7 +22,7 @@ const databreakfast =  {
         ]
     }, {
         "id": 3,
-        "drink": "Café americano",
+        "name": "Café americano",
         "img": "../assets/breakfast/americancoffe.png",
         "price": 20,
         "type" : [
@@ -32,7 +32,7 @@ const databreakfast =  {
         ]
     }, {
         "id": 4,
-        "food": "Café con leche",
+        "name": "Café con leche",
         "img": "../assets/breakfast/coffeandmilk.png",
         "price": 28,
         "type" : [
@@ -49,4 +49,4 @@ const databreakfast =  {
 };
 
 
-//export default databreakfast;
+export default databreakfast;

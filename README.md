@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+[Burger Queen Zeplin](https://app.zeplin.io/project/5c539d44ca897c42dafebba8/screen/5cc733cac3cb7a2d9d37e076)
 
 ## Available Scripts
 
