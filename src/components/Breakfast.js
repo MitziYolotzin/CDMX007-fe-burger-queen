@@ -27,25 +27,29 @@ const BreakfastComponent = () => {
 
   const breakfast = [
     {
+      id: 1,
       name: "Sandwich de jamón y queso",
       price: '35',
-      img: "https://i.ibb.co/41PcKwb/sandjc.png",
+      img: "https://i.ibb.co/ynC9xHZ/sandjc.png",
       
     },
     {
+      id: 2,
       name: "Jugo Natural",
       price: '15',
-      img: "../assets/breakfast/orangejuice.png",
+      img: "https://i.ibb.co/8mrd4MK/orangejuice.png",
     },
     {
+      id: 3,
       name: "Café americano",
       price: '20',
-      img: "../assets/breakfast/americancoffe.png",
+      img: "https://i.ibb.co/nsj1GL0/americancoffe.png",
     },
     {
+      id: 4,
       name: "Café con leche",
       price: '28',
-      img: "../assets/breakfast/coffeandmilk.png",
+      img: "https://i.ibb.co/GRPBm7j/coffeandmilk.png",
     }
   ];
 
@@ -53,7 +57,7 @@ const BreakfastComponent = () => {
   const [stateProduct, setStateProduct] = useState(initialValue);
   // initialValue.push(...brekafast);
 
-  console.log(initialValue.length);
+  //console.log(initialValue.length);
 
   useEffect(() => {
     // Should not ever set state during rendering, so do this in useEffect instead.
