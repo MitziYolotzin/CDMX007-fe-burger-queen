@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useState, useEffect } from "react";
 import '../css/Breakfast.css';
 
 import ButtonsBComponent from './buttonsB.js'
@@ -22,6 +22,9 @@ import ButtonsBComponent from './buttonsB.js'
 // export default Breakfast;
 
 const BreakfastComponent = () => {
+
+  const initialValue = [{ id: 0, name: "Product" }];
+
   const breakfast = [
     {
       name: "Sandwich de jamón y queso",
@@ -46,13 +49,25 @@ const BreakfastComponent = () => {
     }
   ];
 
+
+  const [stateProduct, setStateProduct] = useState(initialValue);
+  // initialValue.push(...brekafast);
+
+  console.log(initialValue.length);
+
+  useEffect(() => {
+    // Should not ever set state during rendering, so do this in useEffect instead.
+    setStateProduct(breakfast);
+  }, [breakfast]);
+
   return (
    
       <section className="databreakfast">
-        {breakfast.map((element, item) =>
+        {stateProduct.map((element, item) =>
           <ButtonsBComponent
             key={item}
             {...element}
+
           />
         )}
         </section>
