@@ -14,7 +14,7 @@ body {
 .row {  
     display: flex;
     flex-wrap: wrap;
-  }
+}
  
 .ticketnav {
     width: 344px;
@@ -28,38 +28,44 @@ body {
     margin-top: -11px;
       
     flex:   250%;
-  background: #eeece6;
-  margin-left: -42px;
+    background: #eeece6;
+    margin-left: -42px;
 }
- /*
 
-}
+ 
  .ticketnav-menu{
     display: inline-flex;
     list-style: none;
-    margin-top: 15px;
-
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.83;
-  letter-spacing: normal;
-  word-spacing: 20px;
-  text-align: left;
-  color: #000000;
+    margin-top: 23px;
+    margin-left: -17px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    word-spacing: 20px;
+    text-align: left;
+    color: #000000;
  
- } */
+ }
 
-
-  
-    
-  
-
+ .ticketnav-menu li {
+    display: inline-flex;
+      
+    margin: 5px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #000000;
  
+ }
 
-  
 
 .App {
     /* max-width: 992px; */
@@ -67,10 +73,9 @@ body {
     /* padding: 20px; */
     margin: auto;
     flex: 70%;
-    
     width: 1024px;
-  height: 768px;
-  background-color: #eeece6;
+    height: 768px;
+    background-color: #eeece6;
 }
 
 
@@ -88,7 +93,6 @@ body {
 .nav {
     
     padding: 10px 90px;
-    margin-left: -16px;
     display: flex;
     justify-content: space-between;
     background-color: #fac105;
@@ -143,13 +147,6 @@ body {
 }
 
 
-  
- 
-
-
-
-
-
 .back {
     display: inline-block;
     margin: 5px;
@@ -180,6 +177,16 @@ body {
 }
 
 
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other
+@media screen and (max-width: 700px) {
+    .row, .nav, .App {   
+      flex-direction: column;
+    }
+  } */
 
 
 
