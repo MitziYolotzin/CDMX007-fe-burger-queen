@@ -1,6 +1,6 @@
 .boxed {
     
-    width: 238.6px;
+  width: 238.6px;
   height: 115px;
   border-radius: 12px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
@@ -14,7 +14,7 @@
 
   }
 
-  .imageB{
+  .imageB {
     width: 30px;
   height: 30px;
   object-fit: contain;
@@ -22,7 +22,7 @@
     margin-left: -20px;
   }
 
-  .circle-icon{
+  .circle-icon {
     
     width: 46.6px;
     height: 46.6px;
@@ -32,7 +32,7 @@
     margin-bottom: -28px;
   }
 
-  .name{
+  .name {
     
     height: 87px;
     font-family: 'Roboto', sans-serif;
@@ -47,7 +47,7 @@
     margin-top: -62px;
 
 }
-.price{
+.price {
     
     height: 32px;
     font-family: 'Roboto', sans-serif;

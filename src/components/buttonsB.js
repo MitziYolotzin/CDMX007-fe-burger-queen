@@ -13,7 +13,7 @@ const ButtonsBComponent = ({ img, name, price }) => {
   }
 
 return (
-  //lo que vamos a ocultar o mostrar
+  
     <section className="boxed" onClick={handleClick}>
   <section className="breakfastdata">
   <figure>
@@ -21,6 +21,7 @@ return (
           <img className="imageB" src={img} alt="imageicon" />
         </figure>
         {active &&
+        //lo que vamos a ocultar o mostrar
         <h1>Pedido</h1>
         }
           <div className="name">{name}</div>       

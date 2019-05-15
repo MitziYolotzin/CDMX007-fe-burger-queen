@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/App.css';
 import logoBQ from '../assets/logoBQ.png';
 
 
-class Login extends Component {
-render (){
-  return(
-
-
+const Login = () => {
+//render (){
+  return (
 
 <section className="orange-back">
 <section className="grey-back">
@@ -15,11 +13,9 @@ render (){
 </section>
 </section>
 
-
-
   );
-}
+//}
 
-}
+};
 
 export default Login;

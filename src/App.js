@@ -8,6 +8,7 @@ import Drinks from "./components/Drinks";
 //import Login from "./components/Login";
 //import Error from "./components/Error";
 import  Navbar from "./components/Navbar";
+import './css/Navbar.css';
 
 
 // p1 Prueba Ruta1

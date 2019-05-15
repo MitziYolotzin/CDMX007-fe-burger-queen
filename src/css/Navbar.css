@@ -7,27 +7,31 @@
 
 body {
   background-color: rgb(255, 255, 255);
-
+  margin: 0;
  
 }
-/* 
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
 .ticketnav {
     width: 344px;
-    height: 744px;
+    height: 768px;
     border: solid 1px #707070;
     background-color:  #eeece6;
-
+/* padding: 20px; */
     display: inline-flex;
     list-style: none;
     font-weight: bold;
     margin-top: -11px;
-    background-color:#fac105;
-    width: 66.40625%;
+      
     flex:   250%;
   background: #eeece6;
   margin-left: -42px;
-
- 
+}
+ /*
 
 }
  .ticketnav-menu{
@@ -53,14 +57,20 @@ body {
     
   
 
-
+ 
 
   
 
 .App {
-    max-width: 992px;
-    background-color: #fff;
+    /* max-width: 992px; */
+    /* background-color: #fff; */
+    /* padding: 20px; */
     margin: auto;
+    flex: 70%;
+    
+    width: 1024px;
+  height: 768px;
+  background-color: #eeece6;
 }
 
 
