@@ -1,5 +1,43 @@
-.boxed {
+.databreakfast{
+padding-top: 125px;
+
+}
+.row-butt {  
+  /* display: flex; */
+  
+  display: inline-flex;
+  flex-wrap: wrap;
+  
+}
+
+   .container-buttons {
     
+    display: inline-table;
+    
+    flex-direction:  column;
+           
+    align-items: auto;
+    align-content: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+   padding: 50px;
+   padding-bottom: 1px;
+   padding-top: 40px;
+  
+    /* padding-block-start: 150px; */
+    padding-inline-start: 65px; 
+    
+      /* flex-basis: 50%;
+      flex: 1; 
+      order: 2; */
+      /* flex: 0 1 auto; */
+/* position: relative; */
+
+    }
+  
+
+.boxed {
+  
   width: 238.6px;
   height: 115px;
   border-radius: 12px;

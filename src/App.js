@@ -26,7 +26,6 @@ render (){
     <BrowserRouter>
 <section className="App">
 <Navbar title="Nav" />
-
     {/* <Route path="/new" component={newRoute} /> */}
 <Switch>
     {/* <Route path="/" component={Home} exact /> */}
@@ -35,11 +34,9 @@ render (){
     <Route path="/Burgers" component={Burgers} />
     <Route path="/Drinks" component={Drinks} />
     <Route path="/Complement" component={Complement} />
-
-{/* <Route component={Error} /> */}
-{/*<Route path="/SectionTree" render={() => <SectionTree />}/>*/}
+    {/* <Route component={Error} /> */}
+    {/*<Route path="/SectionTree" render={() => <SectionTree />}/>*/}
 </Switch>
-
     </section>
     </BrowserRouter>
   );

@@ -13,7 +13,8 @@ const ButtonsBComponent = ({ img, name, price }) => {
   }
 
 return (
-  
+  <section className="row-butt">
+  <section className="container-buttons">
     <section className="boxed" onClick={handleClick}>
   <section className="breakfastdata">
   <figure>
@@ -27,6 +28,10 @@ return (
           <div className="name">{name}</div>       
             <div className="price">$ {price} </div>
             </section> 
+            </section>
+
+            </section>
+
             </section>
           
 )

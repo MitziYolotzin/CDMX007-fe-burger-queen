@@ -33,7 +33,7 @@ body {
 }
 
  
- .ticketnav-menu{
+ .ticketnav-menu {
     display: inline-flex;
     list-style: none;
     margin-top: 23px;
@@ -91,7 +91,6 @@ body {
   }
 
 .nav {
-    
     padding: 10px 90px;
     display: flex;
     justify-content: space-between;
