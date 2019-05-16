@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const ButtonsBComponent = ({ img, name, price }) => {
 
   const  [active, setActive] = useState(false);
-//El estado active y setactive que hace un cambio o manipulacion del estado
+//El estado active y setActive que hace un cambio o manipulacion del estado
 //useState con parametro inicial que creamos
   const handleClick = () => {
     //funcion que va a actualizar los valores del estado
