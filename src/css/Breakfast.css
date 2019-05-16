@@ -12,17 +12,17 @@ padding-top: 125px;
 
    .container-buttons {
     
-    display: inline-table;
-    
+    display: inline-block;
+        
     flex-direction:  column;
-           
+    
     align-items: auto;
     align-content: center;
     justify-content: space-between;
     /* background-color: aqua; */
-   padding: 50px;
-   padding-bottom: 1px;
-   padding-top: 40px;
+    padding: 50px;
+    padding-bottom: 1px;
+    padding-top: 40px;
   
     /* padding-block-start: 150px; */
     padding-inline-start: 65px; 
@@ -75,14 +75,14 @@ padding-top: 125px;
     height: 87px;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 0.92;
     letter-spacing: normal;
     text-align: left;
     margin-left: 70px;
-    margin-top: -62px;
+    margin-top: -52px;
 
 }
 .price {
@@ -90,7 +90,7 @@ padding-top: 125px;
     height: 32px;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 0.88;

@@ -27,7 +27,17 @@ return (
            <li className="nav-ticket">Producto</li>
            <li className="nav-ticket">Precio</li>
        </ul>
-   </aside>  
+       <section className="selectButton">
+       <section className="button-cancel">
+       <div className="cancel">Cancelar orden</div>
+       </section>
+       <section className="button-confirm">
+       <div className="confirm">Confirmar orden</div>
+       </section>
+       <div className="total">Total</div>
+       </section>
+    </aside>  
+    
 
     </section>
     </section>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 //import img from '../assets/breakfast/sandjc.png';
+//import  Navbar from "../components/Navbar";
 
 const ButtonsBComponent = ({ img, name, price }) => {
 
@@ -21,9 +22,13 @@ return (
       <div className="circle-icon"></div>
           <img className="imageB" src={img} alt="imageicon" />
         </figure>
+        
         {active &&
-        //lo que vamos a ocultar o mostrar
+        <section className="generic">
+        {/* <Navbar title="ticketnav" /> */}
+        
         <h1>Pedido</h1>
+        </section>
         }
           <div className="name">{name}</div>       
             <div className="price">$ {price} </div>

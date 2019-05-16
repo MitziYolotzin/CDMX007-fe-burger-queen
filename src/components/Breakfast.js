@@ -24,7 +24,7 @@ import ButtonsBComponent from './buttonsB.js'
 const BreakfastComponent = () => {
 
   //const initialValue = [{ id: 0, name: "Product" }];
-
+  
   const breakfast = [
     {
       id: 0,
@@ -54,12 +54,13 @@ const BreakfastComponent = () => {
   ];
 
 
-  const [stateProduct, setStateProduct] = useState([]);
+  const [stateProduct, setStateProduct] = useState([ ]);
   //useState array void > initial state
 
   useEffect(() => {
     // Should not ever set state during rendering, so do this in useEffect instead.
     // [breakfast] compare and check changes in state data, render or just only change render
+    
     setStateProduct(breakfast);
   }, [breakfast]);
 
