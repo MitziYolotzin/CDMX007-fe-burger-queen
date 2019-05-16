@@ -63,13 +63,20 @@ const BreakfastComponent = () => {
     setStateProduct(breakfast);
   }, [ ]);
 
+  const addTodo = index => {
+    const breakfast = [...stateProduct, { index }];
+    setStateProduct(breakfast);
+  };
+
+
   return (
    
       <section className="databreakfast">
-        {stateProduct.map((element, item) =>
+        {stateProduct.map((element, index) =>
           <ButtonsBComponent
-            key={item}
+            key={index}
             {...element}
+            addTodo={addTodo}
 
           />
         )}
