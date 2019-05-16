@@ -21,7 +21,7 @@ return (
   <figure>
       <div className="circle-icon"></div>
           <img className="imageB" src={img} alt="imageicon" />
-        </figure>
+  </figure>
         
         {active &&
         <section className="generic">
@@ -32,12 +32,12 @@ return (
         }
           <div className="name">{name}</div>       
             <div className="price">$ {price} </div>
-            </section> 
-            </section>
+        </section> 
+      </section>
 
-            </section>
+    </section>
 
-            </section>
+    </section>
           
 )
 };
