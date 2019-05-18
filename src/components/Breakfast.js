@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import '../css/Breakfast.css';
 
 import ButtonsBComponent from './buttonsBreakfast'
+import globalContext from "../store/globalContext";
 //import img from '../assets/breakfast/sandjc.png';
 
 // const Breakfast = () => {
@@ -51,7 +52,7 @@ const breakfast = [
 
 
 const BreakfastComponent = () => {
-
+const {actions:{addItem}} = useContext(globalContext)
   //const initialValue = [{ id: 0, name: "Product" }];
   
   const [stateProduct, setStateProduct] = useState([ ]);
@@ -63,9 +64,8 @@ const BreakfastComponent = () => {
     setStateProduct(breakfast);
   }, [ ]);
 
-  const addTodo = index => {
-    const breakfast = [...stateProduct, { index }];
-    setStateProduct(breakfast);
+  const addTodo = item => {
+    addItem(item)
   };
 
 

@@ -10,7 +10,7 @@ const ButtonsBComponent = ({ img, name, price, addTodo, index }) => {
   const handleClick = () => {
     //funcion que va a actualizar los valores del estado
     //cambia el estado que tienen inicialmente active
-    addTodo(index)
+    addTodo({img, name, price})
     setActive(!active);
   }
 
