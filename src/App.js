@@ -7,8 +7,9 @@ import Complement from "./components/Complement";
 import Drinks from "./components/Drinks";
 //import Login from "./components/Login";
 //import Error from "./components/Error";
-import  Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import './css/Navbar.css';
+import GlobalStore from './store/globalStore';
 
 
 // p1 Prueba Ruta1
@@ -21,26 +22,29 @@ import './css/Navbar.css';
 } */
 
 class App extends Component {
-render (){
-  return(
-    <BrowserRouter>
-<section className="App">
-<Navbar title="Nav" />
-    {/* <Route path="/new" component={newRoute} /> */}
-<Switch>
-    {/* <Route path="/" component={Home} exact /> */}
-    {/* <Route path="/Login" component={Login} /> */}
-    <Route path="/Breakfast" component={Breakfast} />
-    <Route path="/Burgers" component={Burgers} />
-    <Route path="/Drinks" component={Drinks} />
-    <Route path="/Complement" component={Complement} />
-    {/* <Route component={Error} /> */}
-    {/*<Route path="/SectionTree" render={() => <SectionTree />}/>*/}
-</Switch>
-    </section>
-    </BrowserRouter>
-  );
-}
+  render() {
+    return (
+      <BrowserRouter>
+        <section className="App">
+          {/* ACA ESTA EL STORE REPARTIENDO STATE A TODOS!!! */}
+          <GlobalStore> 
+            <Navbar title="Nav" />
+            {/* <Route path="/new" component={newRoute} /> */}
+            <Switch>
+              {/* <Route path="/" component={Home} exact /> */}
+              {/* <Route path="/Login" component={Login} /> */}
+              <Route path="/Breakfast" component={Breakfast} />
+              <Route path="/Burgers" component={Burgers} />
+              <Route path="/Drinks" component={Drinks} />
+              <Route path="/Complement" component={Complement} />
+              {/* <Route component={Error} /> */}
+              {/*<Route path="/SectionTree" render={() => <SectionTree />}/>*/}
+            </Switch>
+          </GlobalStore>
+        </section>
+      </BrowserRouter>
+    );
+  }
 
 }
 
