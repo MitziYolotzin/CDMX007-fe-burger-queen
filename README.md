@@ -3,6 +3,11 @@
 
 [Burger Queen Zeplin](https://app.zeplin.io/project/5c539d44ca897c42dafebba8/screen/5cc733cac3cb7a2d9d37e076)
 
+## React Document Research
+
+(https://docs.google.com/document/d/1CXRcWgv8geK3vuEJ38mzdxO7bBrYT6hUbn0TUBuU2-0/edit)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
