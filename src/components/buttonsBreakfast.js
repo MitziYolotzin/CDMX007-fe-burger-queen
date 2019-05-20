@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 //import img from '../assets/breakfast/sandjc.png';
 //import  Navbar from "../components/Navbar";
 
-const ButtonsBComponent = ({ img, name, price, addTodo, index }) => {
+const ButtonsBComponent = ({ img, name, price, addItemTicket }) => {
 
   const [active, setActive] = useState(false);
-//El estado active y setActive que hace un cambio o manipulacion del estado
-//useState con parametro inicial que creamos
+//The active and setActive state that makes a change or manipulation of the state
+//useState with initial parameter that we create
   const handleClick = () => {
-    //funcion que va a actualizar los valores del estado
-    //cambia el estado que tienen inicialmente active
-    addTodo({img, name, price})
+// function that will update the state values
+addItemTicket({img, name, price})
+// change the state they have initially active
     setActive(!active);
   }
 
@@ -25,12 +25,11 @@ return (
   </figure>
   
         {active && 
-        <section className="generic">
-        {/* <Navbar title="ticketnav" /> */}
-        
-        <h1>Pedido</h1>
-        </section>
+        <div className="generic">
+               
+        </div>
         }
+        
           <div className="name">{name}</div>       
             <div className="price">$ {price} </div>
         </section> 

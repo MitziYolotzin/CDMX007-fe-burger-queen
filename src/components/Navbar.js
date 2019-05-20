@@ -31,13 +31,15 @@ const Navbar = () => {
                             <li className="nav-ticket">Producto</li>
                             <li className="nav-ticket">Precio</li>
                         </ul>
+                        <div className="select-product">
                             {cart.map((item, id) =>
                                 <>
                                     <p key={id}>{item.name}</p>
                                     <br />
                                 </>
                             )}
-                        <section className="selectButton">
+                            </div>
+                        <section className="select-button-ticket">
                             <section className="button-cancel">
                                 <div className="cancel">Cancelar orden</div>
                             </section>

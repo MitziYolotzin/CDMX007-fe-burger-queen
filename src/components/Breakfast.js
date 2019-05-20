@@ -53,18 +53,19 @@ const breakfast = [
 
 const BreakfastComponent = () => {
 const {actions:{addItem}} = useContext(globalContext)
-  //const initialValue = [{ id: 0, name: "Product" }];
   
-  const [stateProduct, setStateProduct] = useState([ ]);
-  //useState array void > initial state
+const [stateProduct, setStateProduct] = useState([ ]);
+//useState array void > initial state
+//Deconstruct syntax array of useState, the firs element is the current value of the state
+//The second value is a function to update the current value of the state
 
   useEffect(() => {
-    // Should not ever set state during rendering, so do this in useEffect instead.
-    // [breakfast] compare and check changes in state data, render or just only change render
+// Should not ever set state during rendering, so do this in useEffect instead.
+// [breakfast] compare and check changes in state data, render or just only change render
     setStateProduct(breakfast);
   }, [ ]);
 
-  const addTodo = item => {
+  const addItemTicket = item => {
     addItem(item)
   };
 
@@ -76,7 +77,7 @@ const {actions:{addItem}} = useContext(globalContext)
           <ButtonsBComponent
             key={index}
             {...element}
-            addTodo={addTodo}
+            addItemTicket={addItemTicket}
 
           />
         )}
