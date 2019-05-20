@@ -52,19 +52,28 @@ const breakfast = [
 
 
 const BreakfastComponent = () => {
-const {actions:{addItem}} = useContext(globalContext)
-  
+//Pass global, for consumers from provider.
+//useContext passing the entire object, context object, name, os the actual context object that stores all the information
+const {actions:{addItem}} = useContext(globalContext);
+ //Mode value equal to (example syntax use, value:name{onChange})
+
 const [stateProduct, setStateProduct] = useState([ ]);
-//useState array void > initial state
-//Deconstruct syntax array of useState, the firs element is the current value of the state
-//The second value is a function to update the current value of the state
+/*useState array void > initial state
+Deconstruct syntax array of useState, the firs element is the current value of the state,
+The second value is a function to update the current value of the state */
 
   useEffect(() => {
-// Should not ever set state during rendering, so do this in useEffect instead.
-// [breakfast] compare and check changes in state data, render or just only change render
+// Returning a function
+//sequence of one or more steps. Procedure, ruotine thath you want to component to execute every time the components renders
     setStateProduct(breakfast);
   }, [ ]);
+/* Empty array where overwriting that and saying we don't want you to keep track of any state variables
+[breakfast] compare and check changes in state data, render or just only change render
+ It's posible can change the state them themselves, but none of those state changes for trigger this useEffect function to run again
+ Whatever we put in, here is what we want to trigger a useEffect function, or an effect to run again */
 
+
+//Function add items, props from provider
   const addItemTicket = item => {
     addItem(item)
   };

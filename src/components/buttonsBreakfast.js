@@ -7,6 +7,7 @@ const ButtonsBComponent = ({ img, name, price, addItemTicket }) => {
   const [active, setActive] = useState(false);
 //The active and setActive state that makes a change or manipulation of the state
 //useState with initial parameter that we create
+
   const handleClick = () => {
 // function that will update the state values
 addItemTicket({img, name, price})
@@ -26,12 +27,12 @@ return (
   
         {active && 
         <div className="generic">
-               
+           
         </div>
         }
-        
+      
           <div className="name">{name}</div>       
-            <div className="price">$ {price} </div>
+          <div className="price">$ {price} </div>
         </section> 
       </section>
 

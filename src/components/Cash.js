@@ -6,7 +6,6 @@ const Cash = () => {
         
 <div>
 <h1>Cash</h1>
-    
 </div>
 
     );

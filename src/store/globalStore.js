@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import globalContext from './globalContext';
 
 const { Provider } = globalContext;
+//Component Provider is going to be in charge of sending out our data
+//our data, to our child components, sending messages, this messages form what we call context
+//the data don´t pass trough many layers
 
 const GlobalStore = ({ children = undefined }) => {
   const [cart, setCart] = useState([]);
@@ -10,7 +13,7 @@ const GlobalStore = ({ children = undefined }) => {
     const newCart = [...cart, item];
     setCart(newCart);
   }
-
+//In provider, values, state variables and function to update the state variable
   return (
     <Provider
       value={{
@@ -27,4 +30,4 @@ const GlobalStore = ({ children = undefined }) => {
   )
 }
 
-export default GlobalStore
+export default GlobalStore;

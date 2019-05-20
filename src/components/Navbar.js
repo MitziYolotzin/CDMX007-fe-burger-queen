@@ -6,7 +6,7 @@ import globalContext from '../store/globalContext';
 
 const Navbar = () => {
 
-    const { state: { cart } } = useContext(globalContext)
+    const { state: { cart } } = useContext(globalContext);
 
     console.log(cart)
     return (
@@ -35,6 +35,7 @@ const Navbar = () => {
                             {cart.map((item, id) =>
                                 <>
                                     <p key={id}>{item.name}</p>
+                                    <p key={id}>${item.price}</p>
                                     <br />
                                 </>
                             )}
