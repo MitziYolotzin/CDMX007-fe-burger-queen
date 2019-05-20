@@ -5,7 +5,7 @@
 
 ## React Document Research
 
-(https://docs.google.com/document/d/1CXRcWgv8geK3vuEJ38mzdxO7bBrYT6hUbn0TUBuU2-0/edit)
+[React Document Research Resume Pt. 1](https://docs.google.com/document/d/1CXRcWgv8geK3vuEJ38mzdxO7bBrYT6hUbn0TUBuU2-0/edit)
 
 
 ## Available Scripts
