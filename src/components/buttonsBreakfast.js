@@ -10,7 +10,7 @@ const ButtonsBComponent = ({ img, name, price, addItemTicket }) => {
 
   const handleClick = () => {
 // function that will update the state values
-addItemTicket({img, name, price})
+addItemTicket({img, name, price});
 // change the state they have initially active
     setActive(!active);
   }
@@ -26,9 +26,7 @@ return (
   </figure>
   
         {active && 
-        <div className="generic">
-           
-        </div>
+        console.log('active button')
         }
       
           <div className="name">{name}</div>       

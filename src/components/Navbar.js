@@ -32,15 +32,16 @@ const Navbar = () => {
                             <li className="nav-ticket">Precio</li>
                         </ul>
                         <div className="select-product">
-                            {cart.map((item, id) =>
-                                <>
-                                    <p key={id}>{item.name}</p>
-                                    <p key={id}>${item.price}</p>
+                            {cart.map((item) =>
+                                <React.Fragment key={item.id}>
+                                    
+                                    <p>{item.name}</p>
+                                    <p>${item.price}</p>
                                     <br />
-                                </>
+                                </React.Fragment>
                             )}
                             </div>
-                        <section className="select-button-ticket">
+                        {/* <section className="select-button-ticket">
                             <section className="button-cancel">
                                 <div className="cancel">Cancelar orden</div>
                             </section>
@@ -48,7 +49,7 @@ const Navbar = () => {
                                 <div className="confirm">Confirmar orden</div>
                             </section>
                             <div className="total">Total</div>
-                        </section>
+                        </section> */}
                     </aside>
 
 
