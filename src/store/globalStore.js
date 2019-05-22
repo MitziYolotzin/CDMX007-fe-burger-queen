@@ -6,6 +6,7 @@ const { Provider } = globalContext;
 //our data, to our child components, sending messages, this messages form what we call context
 //the data don´t pass trough many layers
 
+//Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
   const [cart, setCart] = useState([]);
 

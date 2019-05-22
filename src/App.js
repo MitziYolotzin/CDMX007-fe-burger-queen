@@ -16,8 +16,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <section className="App">
-          {/* GlobalStore (Store)  will send the state to all the components
-          GlobalStore function for component globalStore */}
+          {/* ComponentGlobalStore (Store)  will send the state to all the components*/}         
           <GlobalStore> 
             <Navbar title="Nav" />            
             <Switch>
