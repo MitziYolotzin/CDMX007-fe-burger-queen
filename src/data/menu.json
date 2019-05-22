@@ -36,36 +36,42 @@
     {
         "id": 0,
         "name": "Sencilla Res",
-        "price": 40
+        "price": 40,
+        "img": "https://i.ibb.co/qkQBGBr/basicburger.png"
         
     },
     {
         "id": 1,
         "name": "Doble Res",
-        "price": 55
+        "price": 55,
+        "img": "https://i.ibb.co/M5YL69V/doubleburger.png"
     },
     {
         "id": 2,
         "name": "Sencilla Pollo",
-        "price": 40
+        "price": 40,
+        "img": "https://i.ibb.co/qkQBGBr/basicburger.png"
 
     },
     {
         "id": 3,
         "name": "Doble Pollo",
-        "price": 55
+        "price": 55,
+        "img": "https://i.ibb.co/M5YL69V/doubleburger.png"
 
     }, 
     {
         "id": 4,
         "name": "Sencilla Vegetariana",
-        "price": 40
+        "price": 40,
+        "img": "https://i.ibb.co/qkQBGBr/basicburger.png"
 
     },
     {
         "id": 5,
         "name": "Doble Vegetariana",
-        "price": 55
+        "price": 55,
+        "img": "https://i.ibb.co/M5YL69V/doubleburger.png"
 
     }
 ],
@@ -73,13 +79,15 @@
     {
         "id": 0,
         "name": "Refresco",
-        "price": 15
+        "price": 15,
+        "img": "https://i.ibb.co/CmprZYD/soda.png"
         
     },
     {
         "id": 1,
         "name": "Agua",
-        "price": 10
+        "price": 10,
+        "img": "https://i.ibb.co/k0QmDK4/water.png"
         
     }
 ],
@@ -87,13 +95,15 @@
     {
         "id": 0,
         "name": "Papas a la francesa",
-        "price": 15
+        "price": 15,
+        "img": "https://i.ibb.co/h7x8Cys/frenchfries.png"
         
     },
     {
         "id": 1,
         "name": "Aros de Cebolla",
-        "price": 15
+        "price": 15,
+        "img": "https://i.ibb.co/9snTnwd/onionrings.png"
         
     }
 ]
