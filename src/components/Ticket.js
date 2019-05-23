@@ -1,12 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import '../css/Ticket.css';
 import globalContext from '../store/globalContext';
 
-const TicketItems = () => {
+const TicketItems = ( ) => {
+    
+    const { state: { cart, cartDelete }, actions:{ deleteItem } } = useContext(globalContext);
 
-    const { state: { cart } } = useContext(globalContext);
     console.log(cart)
+    console.log(cartDelete)
+    
+    const [activeb, setActiveb] = useState(false);
 
+    const deleteItemTicketList = item => {
+          deleteItem(item)
+      };
+
+    const handleClickb = (id) => {
+        // function that will update the state values
+        deleteItemTicketList(id);
+        // change the state they have initially active
+            setActiveb(!activeb);
+          }
     return (
         
 <section className="row-ticket">
@@ -18,12 +32,18 @@ const TicketItems = () => {
                         </ul>
                         <div className="select-product">
                             {cart.map((item) =>
-                                <React.Fragment key={item.id}>
+                                <React.Fragment>
+                                    <div key={item.id} className="boxed-ticket-product"  onClick={handleClickb }>
                                     
-                                    <p>{item.name}</p>
-                                    <p>$ {item.price}</p>
-                                    <br />
-                                    
+                                        <li className="list-ticket-product">{item.name}</li>
+                                        <li className="list-ticket-product">$ {item.price}</li>
+                                        {activeb && 
+        console.log ('botonticket')
+        
+        }                          
+        
+                                    {/* <br /> */}
+                                    </div>
                                 </React.Fragment>
                             )}
                             </div>

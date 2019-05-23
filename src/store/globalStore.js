@@ -9,20 +9,32 @@ const { Provider } = globalContext;
 //Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
   const [cart, setCart] = useState([]);
+  const [cartDelete, setCartDelete] = useState([]);
 
   const addItem = (item) => {
     const newCart = [...cart, item];
     setCart(newCart);
   }
+
+  const deleteItem = (oneItem) => {
+    const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
+    setCartDelete (newDelItem);
+  }
+
+  
+
 //In provider, values, state variables and function to update the state variable
   return (
     <Provider
       value={{
         state: {
-          cart
+          cart,
+          cartDelete
+      
         },
         actions: {
-          addItem
+          addItem, 
+          deleteItem
         }
       }}
     >
