@@ -5,6 +5,19 @@
   flex-wrap: wrap;
 }
 
+.totalSumTicket {
+  text-align: left;
+}
+
+/* .select-product {
+  width: 316px;
+  height: 61px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #707070;
+  background-color: #eeece6;
+} */
+
 .ticketnav {
     width: 344px;
     height: 768px;

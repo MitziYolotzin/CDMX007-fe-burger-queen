@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import '../css/Breakfast.css';
 import menu from "../data/menu.json";
-import ButtonsBComponent from './buttonsBreakfast'
+import ButtonsBreakfastComponent from './buttonsBreakfast'
 import globalContext from "../store/globalContext";
 
 
@@ -25,7 +25,6 @@ The second value is a function to update the current value of the state */
 //Empty array where overwriting that and saying we don't want you to keep track of any state variables
 
 
-
 //Function add items, props from provider
   const addItemTicket = item => {
     addItem(item)
@@ -34,16 +33,16 @@ The second value is a function to update the current value of the state */
 
   return (
    
-      <section className="databreakfast">
+      <div className="data-breakfast">
         {stateProduct.map((element, index) =>
-          <ButtonsBComponent
+          <ButtonsBreakfastComponent
             key={index}
             {...element}
             addItemTicket={addItemTicket}
 
           />
         )}
-        </section>
+        </div>
       
       
     

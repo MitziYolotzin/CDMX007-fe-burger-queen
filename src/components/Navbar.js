@@ -2,12 +2,9 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import iconlogo from '../assets/ic_launcher.png';
 import '../css/Navbar.css';
-//import globalContext from '../store/globalContext';
+
 
 const Navbar = () => {
-
-    //const { state: { cart } } = useContext(globalContext);
-    //console.log(cart)
 
     return (
         <section className="row">

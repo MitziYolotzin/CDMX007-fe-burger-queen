@@ -1,13 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from "react";
+import '../css/Drinks.css';
+import menu from "../data/menu.json";
+import ButtonsDrinksComponent from './buttonsDrinks'
+import globalContext from "../store/globalContext";
 
 
-const Drinks = () => {
-    return(
-<div>
-    <h1>Drinks</h1>
-</div>
+const DrinksComponent = () => {
 
-    );
+const {actions:{addItem}} = useContext(globalContext);
+
+const [stateProduct, setStateProduct] = useState([ ]);
+
+
+  useEffect(() => {
+// Returning a function
+
+    setStateProduct(menu.drinks);
+  }, [ ]);
+
+
+//Function add items, props from provider
+  const addItemTicket = item => {
+    addItem(item)
+  };
+
+
+  return (
+   
+      <div className="data-drinks">
+        {stateProduct.map((element, index) =>
+          <ButtonsDrinksComponent
+            key={index}
+            {...element}
+            addItemTicket={addItemTicket}
+
+          />
+        )}
+        </div>
+      
+      
+    
+  )
 };
 
-export default Drinks;
+export default DrinksComponent;

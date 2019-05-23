@@ -21,11 +21,18 @@ const TicketItems = () => {
                                 <React.Fragment key={item.id}>
                                     
                                     <p>{item.name}</p>
-                                    <p>${item.price}</p>
+                                    <p>$ {item.price}</p>
                                     <br />
+                                    
                                 </React.Fragment>
                             )}
                             </div>
+                            
+                            <div className="total-sum-ticket">$ {cart.reduce((prevValue, currentValue) => {
+                    return prevValue + Number(currentValue.price);
+                  }, 0.00)}</div>
+                         
+                     
                         {/* <section className="select-button-ticket">
                             <section className="button-cancel">
                                 <div className="cancel">Cancelar orden</div>
