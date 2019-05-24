@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-.data-breakfast {
+.data-button-product {
   padding-top: 125px;
 
 }
 
 .row-buttons {
   /* display: flex; */
-
   display: inline-flex;
   flex-wrap: wrap;
 

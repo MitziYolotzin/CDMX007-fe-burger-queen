@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import '../css/Drinks.css';
+import '../css/Breakfast.css';
 import menu from "../data/menu.json";
 import ButtonsDrinksComponent from './buttonsDrinks'
 import globalContext from "../store/globalContext";
@@ -27,7 +27,7 @@ const [stateProduct, setStateProduct] = useState([ ]);
 
   return (
    
-      <div className="data-drinks">
+      <div className="data-button-product">
         {stateProduct.map((element, index) =>
           <ButtonsDrinksComponent
             key={index}

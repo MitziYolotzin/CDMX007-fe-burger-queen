@@ -33,7 +33,7 @@ The second value is a function to update the current value of the state */
 
   return (
    
-      <div className="data-breakfast">
+      <div className="data-button-product">
         {stateProduct.map((element, index) =>
           <ButtonsBreakfastComponent
             key={index}

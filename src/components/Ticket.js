@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import '../css/Ticket.css';
+import '../css/Navbar.css';
 import globalContext from '../store/globalContext';
 
 const TicketItems = ( ) => {

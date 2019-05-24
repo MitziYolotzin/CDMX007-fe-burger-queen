@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../css/Breakfast.css';
 
 
 const ButtonsBreakfastComponent = ({ img, name, price, addItemTicket }) => {
