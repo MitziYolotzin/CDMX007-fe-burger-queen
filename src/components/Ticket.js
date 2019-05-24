@@ -24,15 +24,15 @@ const TicketItems = ( ) => {
                             <li className="nav-ticket">Precio</li>
                         </ul>
                         <div className="select-product">
-                            {cart.map((item) =>
+                            {cart.map((cart, item) =>
                                 <React.Fragment>
-                                    <div key={item.id} className="boxed-ticket-product" >
+                                    <div key={item} className="boxed-ticket-product" >
                                     
                                        
-                                        <div className="list-name-product">{item.name}</div>
-                                        <div className="list-price-product">$ {item.price}</div>
-                                        <div className="list-cant-product"> 1 </div>
-                                        <div className="list-delete-product"> {item.icdel}</div>                         
+                                        <div className="list-name-product">{cart.name}</div>
+                                        <div className="list-price-product">$ {cart.price}</div>
+                                        <div className="list-cant-product">{cart.quantity}</div>
+                                        <div className="list-delete-product"> {cart.icdel}</div>                         
         
                                     {/* <br /> */}
                                     </div>

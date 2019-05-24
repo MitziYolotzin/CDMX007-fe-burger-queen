@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect} from "react";
 import '../css/Breakfast.css';
 import menu from "../data/menu.json";
 import ButtonsBreakfastComponent from './buttonsBreakfast'
-import globalContext from "../store/globalContext";
+//import globalContext from "../store/globalContext";
 
 
 
 const BreakfastComponent = () => {
 //Pass globalContext, for consumers from provider.
 //useContext passing the entire object, context object, name, os the actual context object that stores all the information
-const {actions:{addItem}} = useContext(globalContext);
+//const { actions:{addItem}} = useContext(globalContext);
  //Mode value equal to (example syntax use, value:name{onChange})
 
 const [stateProduct, setStateProduct] = useState([ ]);
@@ -25,10 +25,7 @@ The second value is a function to update the current value of the state */
 //Empty array where overwriting that and saying we don't want you to keep track of any state variables
 
 
-//Function add items, props from provider
-  const addItemTicket = item => {
-    addItem(item)
-  };
+
 
 
   return (
@@ -38,7 +35,6 @@ The second value is a function to update the current value of the state */
           <ButtonsBreakfastComponent
             key={index}
             {...element}
-            addItemTicket={addItemTicket}
 
           />
         )}

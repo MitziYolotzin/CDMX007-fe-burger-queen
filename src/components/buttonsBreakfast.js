@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import '../css/Breakfast.css';
+import globalContext from "../store/globalContext";
 
 
-const ButtonsBreakfastComponent = ({ img, name, price, addItemTicket }) => {
+const ButtonsBreakfastComponent = ({ img, name, price }) => {
+  const { actions:{addItem}} = useContext(globalContext);
+  //Function add items, props from provider
+  const addItemTicket = item => {
 
-  
+    addItem(item)
+
+  };
 
 return (
   

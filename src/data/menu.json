@@ -7,28 +7,32 @@
         "name": "Sandwich de jamón y queso",
         "price": 35,
         "img": "https://i.ibb.co/ynC9xHZ/sandjc.png",
-        "icdel": "https://i.ibb.co/gdkqQpj/delete.png"
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
+        "quantity": 1
         
         
     }, {
         "id": 1,
         "name": "Jugo Natural",
         "price": 15,
-        "img": "https://i.ibb.co/8mrd4MK/orangejuice.png"
+        "img": "https://i.ibb.co/8mrd4MK/orangejuice.png",
+        "quantity": 1
         
        
     }, {
         "id": 2,
         "name": "Café Americano",
         "price": 20,
-        "img": "https://i.ibb.co/nsj1GL0/americancoffe.png"
+        "img": "https://i.ibb.co/nsj1GL0/americancoffe.png",
+        "quantity": 1
         
         
     }, {
         "id": 3,
         "name": "Café con leche",
         "price": 28,
-        "img": "https://i.ibb.co/GRPBm7j/coffeandmilk.png"
+        "img": "https://i.ibb.co/GRPBm7j/coffeandmilk.png",
+        "quantity": 1
         
         
     }
@@ -39,41 +43,47 @@
         "id": 0,
         "name": "Sencilla Res",
         "price": 40,
-        "img": "https://i.ibb.co/qkQBGBr/basicburger.png"
+        "img": "https://i.ibb.co/qkQBGBr/basicburger.png",
+        "quantity": 1
         
     },
     {
         "id": 1,
         "name": "Doble Res",
         "price": 55,
-        "img": "https://i.ibb.co/M5YL69V/doubleburger.png"
+        "img": "https://i.ibb.co/M5YL69V/doubleburger.png",
+        "quantity": 1
     },
     {
         "id": 2,
         "name": "Sencilla Pollo",
         "price": 40,
-        "img": "https://i.ibb.co/qkQBGBr/basicburger.png"
+        "img": "https://i.ibb.co/qkQBGBr/basicburger.png",
+        "quantity": 1
 
     },
     {
         "id": 3,
         "name": "Doble Pollo",
         "price": 55,
-        "img": "https://i.ibb.co/M5YL69V/doubleburger.png"
+        "img": "https://i.ibb.co/M5YL69V/doubleburger.png",
+        "quantity": 1
 
     }, 
     {
         "id": 4,
         "name": "Sencilla Vegetariana",
         "price": 40,
-        "img": "https://i.ibb.co/qkQBGBr/basicburger.png"
+        "img": "https://i.ibb.co/qkQBGBr/basicburger.png",
+        "quantity": 1
 
     },
     {
         "id": 5,
         "name": "Doble Vegetariana",
         "price": 55,
-        "img": "https://i.ibb.co/M5YL69V/doubleburger.png"
+        "img": "https://i.ibb.co/M5YL69V/doubleburger.png",
+        "quantity": 1
 
     }
 ],
@@ -82,14 +92,16 @@
         "id": 0,
         "name": "Refresco",
         "price": 15,
-        "img": "https://i.ibb.co/CmprZYD/soda.png"
+        "img": "https://i.ibb.co/CmprZYD/soda.png",
+        "quantity": 1
         
     },
     {
         "id": 1,
         "name": "Agua",
         "price": 10,
-        "img": "https://i.ibb.co/k0QmDK4/water.png"
+        "img": "https://i.ibb.co/k0QmDK4/water.png",
+        "quantity": 1
         
     }
 ],
@@ -98,14 +110,16 @@
         "id": 0,
         "name": "Papas a la francesa",
         "price": 15,
-        "img": "https://i.ibb.co/h7x8Cys/frenchfries.png"
+        "img": "https://i.ibb.co/h7x8Cys/frenchfries.png",
+        "quantity": 1
         
     },
     {
         "id": 1,
         "name": "Aros de Cebolla",
         "price": 15,
-        "img": "https://i.ibb.co/9snTnwd/onionrings.png"
+        "img": "https://i.ibb.co/9snTnwd/onionrings.png",
+        "quantity": 1
         
     }
 ]
