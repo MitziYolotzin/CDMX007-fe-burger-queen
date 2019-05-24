@@ -2,16 +2,17 @@ import React, { useContext} from 'react';
 import '../css/Navbar.css';
 import globalContext from '../store/globalContext';
 
-const TicketItems = ( ) => {
+const TicketItems = ({ img, name, price, quantity, icdel} ) => {
     
-    const { state: { cart }} = useContext(globalContext);
+    const { state: { cart }, actions:{deleteItem}} = useContext(globalContext);
 
     console.log(cart)
   
     
-    /*const deleteItemTicketList = item => {
+    const deleteItemTicketList = (item) => {
         deleteItem(item)
-    };*/
+    }
+   
 
 
     return (
@@ -55,15 +56,15 @@ const TicketItems = ( ) => {
                   }, 0)}</div>
                          
                      
-                        {/* <section className="select-button-ticket">
-                            <section className="button-cancel">
+                        <div className="select-button-ticket">
+                            <div className="button-cancel"  onClick={() => deleteItemTicketList({img, name, price, quantity, icdel})}>
                                 <div className="cancel">Cancelar orden</div>
-                            </section>
-                            <section className="button-confirm">
+                            </div>
+                            <div className="button-confirm">
                                 <div className="confirm">Confirmar orden</div>
-                            </section>
-                            <div className="total">Total</div>
-                        </section> */}
+                            </div>
+                            
+                        </div>
                     </aside>
 
 

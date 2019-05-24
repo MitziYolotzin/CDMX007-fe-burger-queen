@@ -79,6 +79,10 @@ body {
 
 .select-button-ticket {
   margin-left: 290px;
+  position: fixed;
+  bottom: 109px;
+  left: 791px;
+
 }
 
 /*TICKET LIST*/
@@ -87,7 +91,7 @@ body {
   font-size: 28px;
   font-weight: bold;
   position: fixed;
-  bottom: 149px;
+  bottom: 204px;
   left: 860px;
 }
 

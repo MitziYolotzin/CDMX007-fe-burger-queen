@@ -18,10 +18,16 @@ setCart(newCart);
     
   }
 
-  const deleteItem = (oneItem) => {
-    const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
+  const deleteItem = () => {
+    const newDelItem = [ ];
     setCartDelete (newDelItem);
   }
+
+  
+  // const deleteItem = (oneItem) => {
+  //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
+  //   setCartDelete (newDelItem);
+  // }
 
   
 
