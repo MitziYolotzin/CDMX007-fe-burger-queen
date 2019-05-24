@@ -5,6 +5,7 @@ import globalContext from "../store/globalContext";
 
 const ButtonsBreakfastComponent = ({ img, name, price, quantity, icdel }) => {
   const { actions:{addItem}} = useContext(globalContext);
+  
   //Function add items, props from provider
   const addItemTicket = item => {
 

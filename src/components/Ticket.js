@@ -4,13 +4,13 @@ import globalContext from '../store/globalContext';
 
 const TicketItems = ({ img, name, price, quantity, icdel} ) => {
     
-    const { state: { cart }, actions:{deleteItem}} = useContext(globalContext);
+    const { state: { cart }, actions:{deleteAllItems}} = useContext(globalContext);
 
     console.log(cart)
   
     
-    const deleteItemTicketList = (item) => {
-        deleteItem(item)
+    const deleteTicketList = (item) => {
+        deleteAllItems(item)
     }
    
 
@@ -42,6 +42,7 @@ const TicketItems = ({ img, name, price, quantity, icdel} ) => {
       
           <div className="circle-icon-ticket"></div>
           <img className="image-icon-ticket" src={cart.icdel} alt="imageicon" />
+          
               
         
                                     {/* <br /> */}
@@ -57,7 +58,7 @@ const TicketItems = ({ img, name, price, quantity, icdel} ) => {
                          
                      
                         <div className="select-button-ticket">
-                            <div className="button-cancel"  onClick={() => deleteItemTicketList({img, name, price, quantity, icdel})}>
+                            <div className="button-cancel" onClick={() => deleteTicketList({img, name, price, quantity, icdel})} >
                                 <div className="cancel">Cancelar orden</div>
                             </div>
                             <div className="button-confirm">

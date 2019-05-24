@@ -9,7 +9,7 @@ const { Provider } = globalContext;
 //Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
   const [cart, setCart] = useState([]);
-  const [cartDelete, setCartDelete] = useState([]);
+  //const [cartDelete, setCartDelete] = useState([]);
 
   const addItem = (item) => {
     const newCart = [...cart, item];
@@ -18,10 +18,13 @@ setCart(newCart);
     
   }
 
-  const deleteItem = () => {
-    const newDelItem = [ ];
-    setCartDelete (newDelItem);
-  }
+  // const deleteItem = index => {
+  //   const newCart = [...cart];
+  //   newCart.splice(index, 1)
+  //   setCart (newCart);
+  // }
+
+  const deleteAllItems =() =>setCart([]) ;
 
   
   // const deleteItem = (oneItem) => {
@@ -37,12 +40,12 @@ setCart(newCart);
       value={{
         state: {
           cart,
-          cartDelete
+          
       
         },
         actions: {
           addItem, 
-          deleteItem
+          deleteAllItems
         }
       }}
     >
