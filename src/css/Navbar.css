@@ -71,13 +71,63 @@ body {
 .select-product {
  
   align-items: center;
-  margin-left: -220px;
+  margin-left: -318px;
   margin-top: 84px;
 }
 
 .select-button-ticket {
   margin-left: 290px;
 }
+
+/*TICKET LIST*/
+.total-sum-ticket {
+ 
+  font-size: 28px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 149px;
+  left: 860px;
+}
+
+.boxed-ticket-product {
+  white-space: normal;
+  width: 316px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #707070;
+  background-color: #eeece6;
+  padding: 5px;
+  font-size: inherit;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #000000;
+
+}
+
+.list-name-product {
+  width: 157px;
+  margin-left: 73px;
+  margin-top: 3px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.list-cant-product {
+  margin-top: -23px;
+  margin-left: -250px;
+}
+
+.list-price-product{
+  margin-left: 243px;
+  margin-top: -19px;
+}
+
+
 
 
 
@@ -229,7 +279,7 @@ body {
 
 .nav-menu-link:hover {
   border: 1px solid #fac105;
-  color: #fac105;
+  color:  #721a16;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }

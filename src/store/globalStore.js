@@ -13,6 +13,7 @@ const GlobalStore = ({ children = undefined }) => {
 
   const addItem = (item) => {
     const newCart = [...cart, item];
+    
     setCart(newCart);
   }
 

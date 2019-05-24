@@ -1,26 +1,18 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import '../css/Navbar.css';
 import globalContext from '../store/globalContext';
 
 const TicketItems = ( ) => {
     
-    const { state: { cart, cartDelete }, actions:{ deleteItem } } = useContext(globalContext);
+    const { state: { cart }} = useContext(globalContext);
 
     console.log(cart)
-    console.log(cartDelete)
+  
     
-    const [activeb, setActiveb] = useState(false);
+    /*const deleteItemTicketList = item => {
+        deleteItem(item)
+    };*/
 
-    const deleteItemTicketList = item => {
-          deleteItem(item)
-      };
-
-    const handleClickb = (id) => {
-        // function that will update the state values
-        deleteItemTicketList(id);
-        // change the state they have initially active
-            setActiveb(!activeb);
-          }
 
     return (
         
@@ -34,14 +26,13 @@ const TicketItems = ( ) => {
                         <div className="select-product">
                             {cart.map((item) =>
                                 <React.Fragment>
-                                    <div key={item.id} className="boxed-ticket-product"  onClick={handleClickb }>
+                                    <div key={item.id} className="boxed-ticket-product" >
                                     
-                                        <li className="list-ticket-product">{item.name}</li>
-                                        <li className="list-ticket-product">$ {item.price}</li>
-                                        {activeb && 
-        console.log ('botonticket')
-        
-        }                          
+                                       
+                                        <div className="list-name-product">{item.name}</div>
+                                        <div className="list-price-product">$ {item.price}</div>
+                                        <div className="list-cant-product"> 1 </div>
+                                        <div className="list-delete-product"> {item.icdel}</div>                         
         
                                     {/* <br /> */}
                                     </div>
@@ -49,7 +40,7 @@ const TicketItems = ( ) => {
                             )}
                             </div>
                             
-                            <div className="total-sum-ticket">$ {cart.reduce((prevValue, currentValue) => {
+                            <div className="total-sum-ticket">Total $ {cart.reduce((prevValue, currentValue) => {
                     return prevValue + currentValue.price;
                   }, 0)}</div>
                          

@@ -6,7 +6,8 @@
         "id": 0,
         "name": "Sandwich de jamón y queso",
         "price": 35,
-        "img": "https://i.ibb.co/ynC9xHZ/sandjc.png"
+        "img": "https://i.ibb.co/ynC9xHZ/sandjc.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png"
         
         
     }, {
