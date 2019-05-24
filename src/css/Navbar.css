@@ -11,6 +11,11 @@ body {
 
 }
 
+.ticket-align{
+  margin-top: -64px;
+  margin-left: 720px;
+}
+
 .ticketnav {	
   width: 344px;	
   height: 768px;	
@@ -169,7 +174,7 @@ body {
 
 
 .iconlogoB {
-  margin-left: -76px;
+  margin-left: -80px;
   margin-top: 2px;
   width: 49px;
   height: 49px;
@@ -196,8 +201,8 @@ body {
   list-style: none;
   display: flex;
   margin-top: 11px;
-  margin-left: -28px;
-  margin-right: 65px;
+  margin-left: -45px;
+  margin-right: 247px;
 
 }
 
