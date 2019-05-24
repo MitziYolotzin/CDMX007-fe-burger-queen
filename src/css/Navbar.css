@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /* 
 * {
     box-sizing: border-box; 
@@ -73,6 +73,8 @@ body {
   align-items: center;
   margin-left: -318px;
   margin-top: 84px;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .select-button-ticket {
@@ -97,9 +99,9 @@ body {
   border: solid 2px #707070;
   background-color: #eeece6;
   padding: 5px;
-  font-size: inherit;
+  font-size: 20px;
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -107,11 +109,12 @@ body {
   letter-spacing: normal;
   color: #000000;
 
+
 }
 
 .list-name-product {
   width: 157px;
-  margin-left: 73px;
+  margin-left: 45px;
   margin-top: 3px;
   text-align: center;
   line-height: 26px;
@@ -119,16 +122,38 @@ body {
 
 .list-cant-product {
   margin-top: -23px;
-  margin-left: -250px;
+  margin-left: -278px;
 }
 
 .list-price-product{
-  margin-left: 243px;
-  margin-top: -19px;
+  margin-left: 109px;
+  margin-top: -39px;
 }
 
+.image-icon-ticket {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-top: -29px;
+  margin-left: 235px;
+}
 
+.circle-icon-ticket {
 
+  width: 46.6px;
+  height: 46.6px;
+  border-radius: 100px;
+  border: solid 2px #fac105;
+  margin-left: 249px;
+  margin-bottom: -59px;
+}
+
+.delete-button-listfood {
+  border-radius: 6px;
+  border: none;
+  background-color: #eeece6;
+  margin-top: 6px;
+}
 
 
 

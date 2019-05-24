@@ -1,28 +1,20 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import '../css/Breakfast.css';
 import menu from "../data/menu.json";
 import ButtonsComplementComponent from './buttonsComplements'
-import globalContext from "../store/globalContext";
 
 
 const ComplementComponent = () => {
 
-const {actions:{addItem}} = useContext(globalContext);
 
 const [stateProduct, setStateProduct] = useState([ ]);
 
 
   useEffect(() => {
 // Returning a function
-
     setStateProduct(menu.additional);
   }, [ ]);
 
-
-//Function add items, props from provider
-  const addItemTicket = item => {
-    addItem(item)
-  };
 
 
   return (
@@ -32,7 +24,7 @@ const [stateProduct, setStateProduct] = useState([ ]);
           <ButtonsComplementComponent
             key={index}
             {...element}
-            addItemTicket={addItemTicket}
+           
 
           />
         )}

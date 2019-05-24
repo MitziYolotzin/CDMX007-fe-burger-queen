@@ -1,28 +1,19 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import '../css/Breakfast.css';
 import menu from "../data/menu.json";
 import ButtonsDrinksComponent from './buttonsDrinks'
-import globalContext from "../store/globalContext";
 
 
 const DrinksComponent = () => {
-
-const {actions:{addItem}} = useContext(globalContext);
 
 const [stateProduct, setStateProduct] = useState([ ]);
 
 
   useEffect(() => {
 // Returning a function
-
     setStateProduct(menu.drinks);
   }, [ ]);
 
-
-//Function add items, props from provider
-  const addItemTicket = item => {
-    addItem(item)
-  };
 
 
   return (
@@ -32,7 +23,7 @@ const [stateProduct, setStateProduct] = useState([ ]);
           <ButtonsDrinksComponent
             key={index}
             {...element}
-            addItemTicket={addItemTicket}
+            
 
           />
         )}

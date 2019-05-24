@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 
 .data-button-product {
   margin-left: -28px;
@@ -40,7 +42,7 @@
 
 
 .boxed {
-
+  
   width: 238.6px;
   height: 115px;
   border-radius: 12px;
@@ -73,13 +75,15 @@
   margin-bottom: -28px;
 }
 
+
+
 .name {
 
   height: 87px;
   font-family: 'Roboto', sans-serif;
   font-size: 26px;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: bold;
   font-stretch: normal;
   line-height: 0.92;
   letter-spacing: normal;
@@ -94,8 +98,8 @@
   height: 32px;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: bold;
   font-stretch: normal;
   line-height: 0.88;
   letter-spacing: normal;

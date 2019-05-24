@@ -16,6 +16,7 @@
         "name": "Jugo Natural",
         "price": 15,
         "img": "https://i.ibb.co/8mrd4MK/orangejuice.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
        
@@ -24,6 +25,7 @@
         "name": "Café Americano",
         "price": 20,
         "img": "https://i.ibb.co/nsj1GL0/americancoffe.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
         
@@ -32,6 +34,7 @@
         "name": "Café con leche",
         "price": 28,
         "img": "https://i.ibb.co/GRPBm7j/coffeandmilk.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
         
@@ -44,6 +47,7 @@
         "name": "Sencilla Res",
         "price": 40,
         "img": "https://i.ibb.co/qkQBGBr/basicburger.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
     },
@@ -52,6 +56,7 @@
         "name": "Doble Res",
         "price": 55,
         "img": "https://i.ibb.co/M5YL69V/doubleburger.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
     },
     {
@@ -59,6 +64,7 @@
         "name": "Sencilla Pollo",
         "price": 40,
         "img": "https://i.ibb.co/qkQBGBr/basicburger.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
 
     },
@@ -67,6 +73,7 @@
         "name": "Doble Pollo",
         "price": 55,
         "img": "https://i.ibb.co/M5YL69V/doubleburger.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
 
     }, 
@@ -75,6 +82,7 @@
         "name": "Sencilla Vegetariana",
         "price": 40,
         "img": "https://i.ibb.co/qkQBGBr/basicburger.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
 
     },
@@ -83,6 +91,7 @@
         "name": "Doble Vegetariana",
         "price": 55,
         "img": "https://i.ibb.co/M5YL69V/doubleburger.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
 
     }
@@ -93,6 +102,7 @@
         "name": "Refresco",
         "price": 15,
         "img": "https://i.ibb.co/CmprZYD/soda.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
     },
@@ -101,6 +111,7 @@
         "name": "Agua",
         "price": 10,
         "img": "https://i.ibb.co/k0QmDK4/water.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
     }
@@ -111,6 +122,7 @@
         "name": "Papas a la francesa",
         "price": 15,
         "img": "https://i.ibb.co/h7x8Cys/frenchfries.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
     },
@@ -119,6 +131,7 @@
         "name": "Aros de Cebolla",
         "price": 15,
         "img": "https://i.ibb.co/9snTnwd/onionrings.png",
+        "icdel": "https://i.ibb.co/gdkqQpj/delete.png",
         "quantity": 1
         
     }

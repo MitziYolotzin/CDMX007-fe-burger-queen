@@ -18,12 +18,15 @@ const TicketItems = ( ) => {
         
 
                     <aside className="ticketnav">
+                        
                         <ul className="ticketnav-menu">
                             <li className="nav-ticket">Cant.</li>
                             <li className="nav-ticket">Producto</li>
                             <li className="nav-ticket">Precio</li>
                         </ul>
+                       
                         <div className="select-product">
+                        
                             {cart.map((cart, item) =>
                                 <React.Fragment>
                                     <div key={item} className="boxed-ticket-product" >
@@ -32,12 +35,19 @@ const TicketItems = ( ) => {
                                         <div className="list-name-product">{cart.name}</div>
                                         <div className="list-price-product">$ {cart.price}</div>
                                         <div className="list-cant-product">{cart.quantity}</div>
-                                        <div className="list-delete-product"> {cart.icdel}</div>                         
+                                        
+                                        
+        
+      
+          <div className="circle-icon-ticket"></div>
+          <img className="image-icon-ticket" src={cart.icdel} alt="imageicon" />
+              
         
                                     {/* <br /> */}
                                     </div>
                                 </React.Fragment>
                             )}
+                            
                             </div>
                             
                             <div className="total-sum-ticket">Total $ {cart.reduce((prevValue, currentValue) => {

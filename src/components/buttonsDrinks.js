@@ -1,14 +1,23 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import '../css/Breakfast.css';
+import globalContext from "../store/globalContext";
 
 
-const ButtonsDrinksComponent = ({ img, name, price, addItemTicket }) => {
+const ButtonsDrinksComponent = ({ img, name, price, quantity, icdel }) => {
+  const { actions:{addItem}} = useContext(globalContext);
 
- 
+//Function add items, props from provider
+const addItemTicket = item => {
+  addItem(item)
+};
+
+
+
 return (
   
   <section className="row-buttons">
   <section className="container-buttons">
-    <div className="boxed" onClick={() => addItemTicket({img, name, price})}>
+    <div className="boxed" onClick={() => addItemTicket({img, name, price, quantity, icdel})}>
         <div className="drinksdata">
       <figure>
         <div className="circle-icon"></div>

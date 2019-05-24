@@ -24,10 +24,6 @@ The second value is a function to update the current value of the state */
   }, [ ]);
 //Empty array where overwriting that and saying we don't want you to keep track of any state variables
 
-
-
-
-
   return (
    
       <div className="data-button-product">
