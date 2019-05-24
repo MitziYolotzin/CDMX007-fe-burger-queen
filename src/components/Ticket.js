@@ -21,9 +21,10 @@ const TicketItems = ( ) => {
         // change the state they have initially active
             setActiveb(!activeb);
           }
+
     return (
         
-<section className="row-ticket">
+
                     <aside className="ticketnav">
                         <ul className="ticketnav-menu">
                             <li className="nav-ticket">Cant.</li>
@@ -49,8 +50,8 @@ const TicketItems = ( ) => {
                             </div>
                             
                             <div className="total-sum-ticket">$ {cart.reduce((prevValue, currentValue) => {
-                    return prevValue + Number(currentValue.price);
-                  }, 0.00)}</div>
+                    return prevValue + currentValue.price;
+                  }, 0)}</div>
                          
                      
                         {/* <section className="select-button-ticket">
@@ -65,7 +66,7 @@ const TicketItems = ( ) => {
                     </aside>
 
 
-                </section>
+                
 
     );
 };

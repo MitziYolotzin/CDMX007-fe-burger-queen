@@ -7,8 +7,9 @@ import Complement from "./components/Complement";
 import Drinks from "./components/Drinks";
 import Navbar from "./components/Navbar";
 import './css/Navbar.css';
-import TicketItems from "./components/Ticket";
+
 import GlobalStore from './store/globalStore';
+import TicketItems from './components/Ticket';
 
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
               <Route path="/Drinks" component={Drinks} />
               <Route path="/Complement" component={Complement} />
             </Switch>
-            <TicketItems/> 
+           <TicketItems />
           </GlobalStore>
         </section>
       </BrowserRouter>
