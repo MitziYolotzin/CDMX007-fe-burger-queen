@@ -28,6 +28,19 @@ const deleteItem = index => {
   setCart (newCart);
 }
 
+//{cart.filter(index => index !== id )}
+//Function delete same items in ticket
+  // const deleteItem = id => {
+  //   const newCartDel = [...cartDelete];
+  //   newCartDel.filter(index => index !== id )
+  //   setCartDelete (newCartDel);
+  // } 
+
+
+  // const deleteItem = (oneItem) => {
+  //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
+  //   setCartDelete (newDelItem);
+  // }
  
 
 //In provider, values, state variables and function to update the state variable
@@ -35,7 +48,7 @@ const deleteItem = index => {
     <Provider
       value={{
         state: {
-          cart,
+          cart
           
       
         },

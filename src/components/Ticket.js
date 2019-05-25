@@ -9,11 +9,10 @@ const TicketItems = ({ img, name, price, quantity, icdel, id} ) => {
     console.log(cart)
   
     
-    const deleteTicketList = (id) => {
-        deleteAllItems(id)
+    const deleteTicketList = (item) => {
+        deleteAllItems(item)
     }
    
-
 
     return (
         
@@ -58,7 +57,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id} ) => {
                          
                      
                         <div className="select-button-ticket">
-                            <div className="button-cancel" onClick={() => deleteTicketList({img, name, price, quantity, icdel})} >
+                            <div className="button-cancel" onClick={() => deleteTicketList({img, name, price, quantity, icdel, id})} >
                                 <div className="cancel">Cancelar orden</div>
                             </div>
                             <div className="button-confirm">
