@@ -118,20 +118,22 @@ body {
 
 .list-name-product {
   width: 157px;
-  margin-left: 45px;
+  margin-left: 38px;
   margin-top: 3px;
-  text-align: center;
+  margin-bottom: 13px;
+  text-align: left;
   line-height: 26px;
 }
 
 .list-cant-product {
   margin-top: -23px;
-  margin-left: -278px;
+  margin-left: -282px;
 }
 
 .list-price-product{
-  margin-left: 109px;
-  margin-top: -39px;
+  margin-left: 101px;
+  margin-top: -37px;
+  margin-bottom: 2px;
 }
 
 .image-icon-ticket {

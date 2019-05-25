@@ -4,7 +4,7 @@ import globalContext from '../store/globalContext';
 
 const TicketItems = ({ img, name, price, quantity, icdel} ) => {
     
-    const { state: { cart }, actions:{deleteAllItems}} = useContext(globalContext);
+    const { state: { cart }, actions:{deleteAllItems, deleteItem}} = useContext(globalContext);
 
     console.log(cart)
   
@@ -39,10 +39,10 @@ const TicketItems = ({ img, name, price, quantity, icdel} ) => {
                                         
                                         
         
-      
-          <div className="circle-icon-ticket"></div>
+      <div className="deleteItem" onClick={() => deleteItem({img, name, price, quantity, icdel})}>
+          {/* <div className="circle-icon-ticket"></div> */}
           <img className="image-icon-ticket" src={cart.icdel} alt="imageicon" />
-          
+          </div>
               
         
                                     {/* <br /> */}

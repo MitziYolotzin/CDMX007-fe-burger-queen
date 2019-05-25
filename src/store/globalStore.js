@@ -15,17 +15,26 @@ const GlobalStore = ({ children = undefined }) => {
     const newCart = [...cart, item];
     setCart(newCart);  
   }
-//Function delete one item, one by one
-  // const deleteItem = index => {
-  //   const newCart = [...cart];
-  //   newCart.splice(index, 1)
-  //   setCart (newCart);
-  // }
 
   const deleteAllItems = () => {
     setCart([]) ;
   }
   
+
+//Function delete same items in ticket
+  // const deleteItem = id => {
+  //   const newCartDel = [...cartDelete];
+  //   newCartDel.filter(index => index !== id )
+  //   setCartDelete (newCartDel);
+  // } 
+
+// Function delete one item, one by one
+const deleteItem = index => {
+  const newCart = [...cart];
+  newCart.splice(index, 1)
+  setCart (newCart);
+}
+
   // const deleteItem = (oneItem) => {
   //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
   //   setCartDelete (newDelItem);
@@ -44,7 +53,8 @@ const GlobalStore = ({ children = undefined }) => {
         },
         actions: {
           addItem, 
-          deleteAllItems
+          deleteAllItems,
+          deleteItem
         }
       }}
     >
