@@ -2,15 +2,15 @@ import React, { useContext} from 'react';
 import '../css/Navbar.css';
 import globalContext from '../store/globalContext';
 
-const TicketItems = ({ img, name, price, quantity, icdel} ) => {
+const TicketItems = ({ img, name, price, quantity, icdel, id} ) => {
     
     const { state: { cart }, actions:{deleteAllItems, deleteItem}} = useContext(globalContext);
 
     console.log(cart)
   
     
-    const deleteTicketList = (item) => {
-        deleteAllItems(item)
+    const deleteTicketList = (id) => {
+        deleteAllItems(id)
     }
    
 
@@ -39,7 +39,7 @@ const TicketItems = ({ img, name, price, quantity, icdel} ) => {
                                         
                                         
         
-      <div className="deleteItem" onClick={() => deleteItem({img, name, price, quantity, icdel})}>
+      <div className="deleteItem" onClick={() => deleteItem({img, name, price, quantity, icdel, id})}>
           {/* <div className="circle-icon-ticket"></div> */}
           <img className="image-icon-ticket" src={cart.icdel} alt="imageicon" />
           </div>
