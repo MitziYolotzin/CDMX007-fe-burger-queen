@@ -13,19 +13,18 @@ const GlobalStore = ({ children = undefined }) => {
 
   const addItem = (item) => {
     const newCart = [...cart, item];
-setCart(newCart);
-    
-    
+    setCart(newCart);  
   }
-
+//Function delete one item, one by one
   // const deleteItem = index => {
   //   const newCart = [...cart];
   //   newCart.splice(index, 1)
   //   setCart (newCart);
   // }
 
-  const deleteAllItems =() =>setCart([]) ;
-
+  const deleteAllItems = () => {
+    setCart([]) ;
+  }
   
   // const deleteItem = (oneItem) => {
   //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);

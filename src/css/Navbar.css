@@ -80,19 +80,19 @@ body {
 .select-button-ticket {
   margin-left: 290px;
   position: fixed;
-  bottom: 109px;
-  left: 791px;
+  bottom: 144px;
+  left: 915px;
 
 }
 
 /*TICKET LIST*/
 .total-sum-ticket {
  
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   position: fixed;
-  bottom: 204px;
-  left: 860px;
+  bottom: 238px;
+  left: 1006px;
 }
 
 .boxed-ticket-product {
@@ -177,7 +177,12 @@ body {
   border: solid 2px #721a16;
   margin-top: 660px;
   margin-left: -388px;
-  ;
+  
+}
+
+.button-cancel:hover { 
+  border: solid 2px #721a16;
+  background-color: #721a16 
 }
 
 .cancel {
@@ -197,13 +202,22 @@ body {
   margin-left: 19px;
 }
 
-.button-confirm {
+.cancel:hover {
+color: #fac105;
+}
+
+.button-confirm  {
   width: 147px;
   height: 76px;
   border-radius: 24px;
   border: solid 2px #721a16;
   margin-top: -80px;
   margin-left: -222px;
+}
+
+.button-confirm:hover { 
+  border: solid 2px #721a16;
+  background-color: #721a16 
 }
 
 .confirm {
@@ -222,6 +236,10 @@ body {
   margin-top: 14px;
   margin-left: 19px;
 }
+
+.confirm:hover {
+  color: #fac105;
+  }
 
 .total {
 
