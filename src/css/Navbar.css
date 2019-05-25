@@ -78,10 +78,10 @@ body {
 }
 
 .select-button-ticket {
-  margin-left: 290px;
+  margin-left: 402px;
   position: fixed;
-  bottom: 144px;
-  left: 915px;
+  /* bottom: 144px;
+  left: 915px; */
 
 }
 
@@ -91,8 +91,10 @@ body {
   font-size: 24px;
   font-weight: bold;
   position: fixed;
-  bottom: 238px;
-  left: 1006px;
+  margin-top: 620px;
+  margin-left: 203px;
+  /* bottom: 238px;
+  left: 1006px; */
 }
 
 .boxed-ticket-product {
