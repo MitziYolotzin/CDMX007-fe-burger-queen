@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <div className="ticket-align">
-        <TicketItems />
+        <TicketItems  />
       </div>
     </section>
   );

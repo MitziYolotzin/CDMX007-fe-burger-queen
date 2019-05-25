@@ -9,9 +9,9 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
   } = useContext(globalContext);
   console.log(cart);
 
-  const deleteTicketList = item => {
-    deleteAllItems(item);
-  };
+  // const deleteTicketList = item => {
+  //   deleteAllItems(item);
+  // };
 
   return (
     <aside className="ticketnav">
@@ -23,11 +23,11 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
 
       <div className="select-product">
         {cart.map((cart, item) => (
-          <React.Fragment>
+          <React.Fragment key={item}>
             <div key={item} className="boxed-ticket-product">
-              <div className="list-name-product">{cart.name}</div>
-              <div className="list-price-product">$ {cart.price}</div>
-              <div className="list-cant-product">{cart.quantity}</div>
+              <div key={name} className="list-name-product">{cart.name}</div>
+              <div key={price} className="list-price-product">$ {cart.price}</div>
+              <div key={quantity} className="list-cant-product">{cart.quantity}</div>
 
               <div
                 className="deleteItem"
@@ -58,7 +58,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
         <div
           className="button-cancel"
           onClick={() =>
-            deleteTicketList({ img, name, price, quantity, icdel, id })
+            deleteAllItems({ img, name, price, quantity, icdel, id })
           }
         >
           <div className="cancel">Cancelar orden</div>
