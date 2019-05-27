@@ -1,8 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Presentación DEMO
+
+[DEMO Burger Queen App](https://docs.google.com/presentation/d/1uLKdzKpIv6Vgw_l4cEdX7Mk851ZOne-vuQHFtnQ1A5Y/edit?usp=sharing)
+
+## Burger Queen App
+
+[Burger Queen](https://burger-queen-1b241.firebaseapp.com/)
+
+## Prototipo alta fidelidad
+
+[Burger Queen Zeplin](https://app.zeplin.io/project/5c539d44ca897c42dafebba8/screen/5cc733cac3cb7a2d9d37e076)
+
+## React Document Research
+
+[React Document Research Resume Pt. 1](https://docs.google.com/document/d/1CXRcWgv8geK3vuEJ38mzdxO7bBrYT6hUbn0TUBuU2-0/edit?usp=sharing)
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
@@ -73,6 +89,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Burger Queen
 
+## Diagrama 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/5h7pLRL/image.png" alt="image" border="0"></a> 
+<a href="https://ibb.co/wRWJ03b"><img src="https://i.ibb.co/qds0yX4/image-1.png" alt="image-1" border="0"></a>
+
+
 ## Preámbulo
 
 [React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
@@ -106,7 +127,7 @@ interfaz en la que puedan tomar pedidos usando una _tablet_, y enviarlos
 a la cocina para que se preparen ordenada y eficientemente (a través de un
 _backend_ del que nos darán detalles más adelante).
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
+
 
 Esta es la información que tenemos del cliente:
 

@@ -1,125 +1,376 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* 
+* {
+    box-sizing: border-box; 
+  } */
 
 body {
   background-color: rgb(255, 255, 255);
+  margin: 0;
+
+}
+
+.ticket-align{
+  margin-top: -64px;
+  margin-left: 720px;
+}
+
+.ticketnav {	
+  width: 344px;	
+  height: 768px;	
+  border: solid 1px #707070;	
+  background-color: #eeece6;	
+  /* padding: 20px; */	
+  display: inline-flex;	
+  list-style: none;	
+  font-weight: bold;	
+  margin-top: -11px;	
+
+   flex: 250%;	
+  background: #eeece6;	
+  margin-left: -42px;	
+}	
+
+
+
+ .ticketnav-menu {	
+  display: inline-flex;	
+  list-style: none;	
+  margin-top: 23px;	
+  margin-left: -17px;	
+  font-family: Roboto;	
+  font-size: 24px;	
+  font-weight: 500;	
+  font-style: normal;	
+  font-stretch: normal;	
+  line-height: 0.83;	
+  letter-spacing: normal;	
+  word-spacing: 20px;	
+  text-align: left;	
+  color: #000000;	
+
+ }	
+
+ .ticketnav-menu li {	
+  display: inline-flex;	
+
+   margin: 5px;	
+  padding: 3px 8px;	
+  border-radius: 5px;	
+  text-decoration: none;	
+  font-family: Roboto;	
+  font-weight: bold;	
+  font-size: 24px;	
+  line-height: 20px;	
+  color: #000000;	
+
+ }	
+
+
+.select-product {
+ 
+  align-items: center;
+  margin-left: -318px;
+  margin-top: 84px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  
+}
+
+.select-button-ticket {
+  margin-left: 402px;
+  position: fixed;
+  /* bottom: 144px;
+  left: 915px; */
+
+}
+
+/*TICKET LIST*/
+.total-sum-ticket {
+ 
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  margin-top: 620px;
+  margin-left: 203px;
+  /* bottom: 238px;
+  left: 1006px; */
+}
+
+.boxed-ticket-product {
+  white-space: normal;
+  width: 316px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #707070;
+  background-color: #eeece6;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #000000;
+
+
+}
+
+.list-name-product {
+  width: 157px;
+  margin-left: 38px;
+  margin-top: 3px;
+  margin-bottom: 13px;
+  text-align: left;
+  line-height: 26px;
+}
+
+.list-cant-product {
+  margin-top: -23px;
+  margin-left: -282px;
+}
+
+.list-price-product{
+  margin-left: 101px;
+  margin-top: -37px;
+  margin-bottom: 2px;
+}
+
+.image-icon-ticket {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-top: -29px;
+  margin-left: 235px;
+}
+
+.circle-icon-ticket {
+
+  width: 46.6px;
+  height: 46.6px;
+  border-radius: 100px;
+  border: solid 2px #fac105;
+  margin-left: 249px;
+  margin-bottom: -59px;
+}
+
+.delete-button-listfood {
+  border-radius: 6px;
+  border: none;
+  background-color: #eeece6;
+  margin-top: 6px;
 }
 
 
 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.button-cancel {
   
+  width: 147px;
+  height: 76px;
+  border-radius: 24px;
+  border: solid 2px #721a16;
+  margin-top: 660px;
+  margin-left: -388px;
+  
+}
+
+.button-cancel:hover { 
+  border: solid 2px #721a16;
+  background-color: #721a16 
+}
+
+.cancel {
+  width: 110px;
+  height: 56px;
+  opacity: 0.96;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.85;
+  letter-spacing: normal;
+  text-align: center;
+  color: #721a16;
+  margin-top: 14px;
+  margin-left: 19px;
+}
+
+.cancel:hover {
+color: #fac105;
+}
+
+.button-confirm  {
+  width: 147px;
+  height: 76px;
+  border-radius: 24px;
+  border: solid 2px #721a16;
+  margin-top: -80px;
+  margin-left: -222px;
+}
+
+.button-confirm:hover { 
+  border: solid 2px #721a16;
+  background-color: #721a16 
+}
+
+.confirm {
+  width: 110px;
+  height: 56px;
+  opacity: 0.96;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.85;
+  letter-spacing: normal;
+  text-align: center;
+  color: #721a16;
+  margin-top: 14px;
+  margin-left: 19px;
+}
+
+.confirm:hover {
+  color: #fac105;
+  }
+
+.total {
+
+  width: 147px;
+  height: 51px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-top: -130px;
+  margin-left: -285px;
+
+}
+
 
 .App {
-    max-width: 992px;
-    background-color: #fff;
-    margin: auto;
+  /* max-width: 992px; */
+  /* background-color: #fff; */
+  /* padding: 20px; */
+  margin: auto;
+  flex: 70%;
+  width: 1024px;
+  height: 768px;
+  background-color: #eeece6;
 }
 
 
 .iconlogoB {
-    margin-left: -76px;
-    margin-top: 2px;
-    width: 49px;
-    height: 49px;
-    object-fit: contain;
-    border-radius: 36px;
-    background-color:#fac105;
-    
-  }
+  margin-left: -80px;
+  margin-top: 2px;
+  width: 49px;
+  height: 49px;
+  object-fit: contain;
+  border-radius: 36px;
+  background-color: #fac105;
 
-.nav, .ticketnav {
-    
-    padding: 10px 90px;
-    margin-left: -16px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fac105;
-
-    width: 690px;
-    height: 55px;
-    border-radius: 2px;
-  
 }
 
-.nav-menu, .ticketnav-menu {
-    list-style: none;
-    display:flex;
-    margin-top: 11px;
-    margin-left: -306px;
-    margin-right: 65px;
-    
+.nav {
+  padding: 10px 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fac105;
+
+  width: 690px;
+  height: 55px;
+  border-radius: 2px;
+  flex: 250%;
+
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin-top: 11px;
+  margin-left: -45px;
+  margin-right: 247px;
+
 }
 
 .nav-menu li {
-    display: inline-block;
-    
+  display: inline-block;
+
 }
 
-.nav-menu-link, .nav-ticket {
-    display: inline-block;
-    margin: 5px;
-    border: 1px solid #fac105;
-    padding: 3px 8px;
-    border-radius: 5px;
-    background-color: #fac105;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 20px;
-    color: #000000;
+.nav-menu-link {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #fac105;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: #fac105;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  color: #000000;
 }
 
 .nav-menu-link:hover {
-    border: 1px solid #fac105;
-    color: #fac105;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  border: 1px solid #fac105;
+  color:  #721a16;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .nav-menu-link.active {
-   
-    color: #721a16;
+
+  color: #721a16;
 }
-
-.nav-ticket{
-  margin-left: 15px;
-  margin-right: 15px;
-  }
-  
- 
-
-
-
 
 
 .back {
-    display: inline-block;
-    margin: 5px;
-    border: 1px solid lightgray;
-    padding: 3px 8px;
-    border-radius: 5px;
-    background-color: rgb(149, 216, 238);
-    text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid lightgray;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: rgb(149, 216, 238);
+  text-decoration: none;
 }
 
 
 .main-content {
-    max-width: 90%;
-    margin: auto;
-    padding-bottom: 50px;
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
 }
 
-.main-content h2{
-    text-align: center;
-    margin-bottom: 20px;
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .container {
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 
@@ -127,4 +378,9 @@ body {
 
 
 
-
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other
+@media screen and (max-width: 768pxpx) {
+    .row, .nav, .App {   
+      flex-direction: column;
+    }
+  } */
