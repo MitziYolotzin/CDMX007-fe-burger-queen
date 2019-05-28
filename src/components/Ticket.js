@@ -4,10 +4,10 @@ import globalContext from "../store/globalContext";
 
 const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
   const {
-    state: { cart },
+    state: { order },
     actions: { deleteAllItems, deleteItem }
   } = useContext(globalContext);
-  console.log(cart);
+  console.log(order);
 
   // const deleteTicketList = item => {
   //   deleteAllItems(item);
@@ -22,12 +22,12 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
       </ul>
 
       <div className="select-product">
-        {cart.map((cart, item) => (
+        {order.map((order, item) => (
           <React.Fragment key={item}>
             <div key={item} className="boxed-ticket-product">
-              <div key={name} className="list-name-product">{cart.name}</div>
-              <div key={price} className="list-price-product">$ {cart.price}</div>
-              <div key={quantity} className="list-cant-product">{cart.quantity}</div>
+              <div key={name} className="list-name-product">{order.name}</div>
+              <div key={price} className="list-price-product">$ {order.price}</div>
+              <div key={quantity} className="list-cant-product">{order.quantity}</div>
 
               <div
                 className="deleteItem"
@@ -37,7 +37,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
               >
                 <img
                   className="image-icon-ticket"
-                  src={cart.icdel}
+                  src={order.icdel}
                   alt="imageicon"
                 />
               </div>
@@ -49,7 +49,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
 
       <div className="total-sum-ticket">
         Total ${" "}
-        {cart.reduce((prevValue, currentValue) => {
+        {order.reduce((prevValue, currentValue) => {
           return prevValue + currentValue.price;
         }, 0)}
       </div>

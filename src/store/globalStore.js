@@ -8,23 +8,23 @@ const { Provider } = globalContext;
 
 //Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
-  const [cart, setCart] = useState([]);
+  const [order, setOrder] = useState([]);
   //const [cartDelete, setCartDelete] = useState([]);
 
   const addItem = item => {
-    const newCart = [...cart, item];
-    setCart(newCart);
+    const newOrder = [...order, item];
+    setOrder(newOrder);
   };
 
   const deleteAllItems = () => {
-    setCart([]);
+    setOrder([]);
   };
 
   // Function delete one item, one by one
   const deleteItem = index => {
-    const newCart = [...cart];
-    newCart.splice(index, 1);
-    setCart(newCart);
+    const newOrder = [...order];
+    newOrder.splice(index, 1);
+    setOrder(newOrder);
   };
 
   
@@ -34,7 +34,7 @@ const GlobalStore = ({ children = undefined }) => {
   //   newCartDel.filter(index => index !== id )
   //   setCartDelete (newCartDel);
   // }
-//{cart.filter(index => index !== id )}
+//{order.filter(index => index !== id )}
   // const deleteItem = (oneItem) => {
   //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
   //   setCartDelete (newDelItem);
@@ -45,7 +45,7 @@ const GlobalStore = ({ children = undefined }) => {
     <Provider
       value={{
         state: {
-          cart
+          order
         },
         actions: {
           addItem,
