@@ -2,12 +2,13 @@ import React, { useContext } from "react";
 import "../css/Navbar.css";
 import globalContext from "../store/globalContext";
 
-const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
+const TicketItems = ({ img, name, price, quantity, icdel, id, total }) => {
+  
   const {
     state: { cart },
     actions: { deleteAllItems, deleteItem }
   } = useContext(globalContext);
-  console.log(cart);
+  // console.log(cart);
 
   // const deleteTicketList = item => {
   //   deleteAllItems(item);
@@ -21,18 +22,18 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
         <li className="nav-ticket">Precio</li>
       </ul>
 
-      <div className="select-product">
+      <div className="select-product" >
         {cart.map((cart, item) => (
           <React.Fragment key={item}>
             <div key={item} className="boxed-ticket-product">
               <div key={name} className="list-name-product">{cart.name}</div>
-              <div key={price} className="list-price-product">$ {cart.price}</div>
+              <div key={total} className="list-total-product">$ {cart.total}</div>
               <div key={quantity} className="list-cant-product">{cart.quantity}</div>
 
               <div
                 className="deleteItem"
                 onClick={() =>
-                  deleteItem({ img, name, price, quantity, icdel, id })
+                  deleteItem({ item })
                 }
               >
                 <img
@@ -50,7 +51,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id }) => {
       <div className="total-sum-ticket">
         Total ${" "}
         {cart.reduce((prevValue, currentValue) => {
-          return prevValue + currentValue.price;
+          return prevValue + currentValue.total;
         }, 0)}
       </div>
 

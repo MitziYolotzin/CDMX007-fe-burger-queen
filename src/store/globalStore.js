@@ -8,26 +8,52 @@ const { Provider } = globalContext;
 
 //Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
+
   const [cart, setCart] = useState([]);
-  //const [cartDelete, setCartDelete] = useState([]);
+  //const [cartAdd, setCartAdd] = useState([]);
 
-  const addItem = item => {
-    const newCart = [...cart, item];
-    setCart(newCart);
-  };
+  const addItem = newItem => {
+   
+    const duplicatedItem= cart.find(({ id }) =>
+    newItem.id === id 
+    )
+    
+    if (duplicatedItem) {
 
-  const deleteAllItems = () => {
-    setCart([]);
-  };
+      const newCart = cart.map(item =>
+        item.id === newItem.id ? {...item, 
+         total: item.total + item.price,
+          quantity: item.quantity + 1} : item
+        )
+       setCart(newCart)      
+    
+  } else {
+    
+    setCart([...cart, newItem])
+
+  }
+}
+  
 
   // Function delete one item, one by one
   const deleteItem = index => {
     const newCart = [...cart];
     newCart.splice(index, 1);
     setCart(newCart);
+      
   };
 
-  
+
+
+
+
+
+
+
+  const deleteAllItems = () => {
+    setCart([]);
+  };
+
   //Function delete same items in ticket
   // const deleteItem = id => {
   //   const newCartDel = [...cartDelete];
@@ -39,9 +65,10 @@ const GlobalStore = ({ children = undefined }) => {
   //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
   //   setCartDelete (newDelItem);
   // }
-
+  console.log(cart)
   //In provider, values, state variables and function to update the state variable
   return (
+    
     <Provider
       value={{
         state: {
@@ -56,7 +83,10 @@ const GlobalStore = ({ children = undefined }) => {
     >
       {children}
     </Provider>
+
   );
+
+
 };
 
 export default GlobalStore;

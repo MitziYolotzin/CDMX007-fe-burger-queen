@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import "../css/Breakfast.css";
 import globalContext from "../store/globalContext";
 
-const ButtonsBreakfastComponent = ({ img, name, price, quantity, icdel }) => {
+const ButtonsBreakfastComponent = ( item ) => {
+  const {img, price, name} = item;
   //Pass globalContext, for consumers from provider.
   //useContext passing the entire object, context object, name, os the actual context object that stores all the information
   //Mode value equal to (example syntax use, value:name{onChange})
@@ -16,7 +17,7 @@ const ButtonsBreakfastComponent = ({ img, name, price, quantity, icdel }) => {
       <section className="container-buttons">
         <div
           className="boxed"
-          onClick={() => addItem({ img, name, price, quantity, icdel })}
+          onClick={() => addItem( item )}
         >
           <div className="breakfastdata">
             <figure>

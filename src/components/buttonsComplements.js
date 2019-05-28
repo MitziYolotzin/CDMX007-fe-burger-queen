@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import "../css/Breakfast.css";
 import globalContext from "../store/globalContext";
 
-const ButtonsComplementComponent = ({ img, name, price, quantity, icdel }) => {
-  
+const ButtonsComplementComponent = (item) => {
+  const {img, price, name} = item;
+
   const {
     actions: { addItem }
   } = useContext(globalContext);
@@ -13,7 +14,7 @@ const ButtonsComplementComponent = ({ img, name, price, quantity, icdel }) => {
       <section className="container-buttons">
         <div
           className="boxed"
-          onClick={() => addItem({ img, name, price, quantity, icdel })}
+          onClick={() => addItem(item)}
         >
           <div className="complementsdata">
             <figure>
