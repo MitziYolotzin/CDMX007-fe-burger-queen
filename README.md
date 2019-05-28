@@ -1,4 +1,12 @@
 
+## Presentación DEMO
+
+[DEMO Burger Queen App](https://docs.google.com/presentation/d/1uLKdzKpIv6Vgw_l4cEdX7Mk851ZOne-vuQHFtnQ1A5Y/edit?usp=sharing)
+
+## Burger Queen App
+
+[Burger Queen](https://burger-queen-1b241.firebaseapp.com/)
+
 ## Prototipo alta fidelidad
 
 [Burger Queen Zeplin](https://app.zeplin.io/project/5c539d44ca897c42dafebba8/screen/5cc733cac3cb7a2d9d37e076)
@@ -10,7 +18,7 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+
 
 ### `npm start`
 

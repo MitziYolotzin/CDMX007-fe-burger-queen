@@ -60,7 +60,7 @@ const GlobalStore = ({ children = undefined }) => {
   //   newCartDel.filter(index => index !== id )
   //   setCartDelete (newCartDel);
   // }
-//{cart.filter(index => index !== id )}
+//{order.filter(index => index !== id )}
   // const deleteItem = (oneItem) => {
   //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
   //   setCartDelete (newDelItem);
