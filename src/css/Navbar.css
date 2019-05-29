@@ -125,7 +125,7 @@ body {
   width: 157px;
   margin-left: 38px;
   margin-top: 3px;
-  margin-bottom: 13px;
+  margin-bottom: -23px;
   text-align: left;
   line-height: 26px;
 }
@@ -147,7 +147,7 @@ body {
   object-fit: contain;
   margin-top: -29px;
   margin-left: 235px;
-  padding-bottom: 16px;
+  padding-bottom: 9px;
 }
 
 .circle-icon-ticket {
@@ -168,7 +168,7 @@ body {
 }
 
 .list-total-product {
-  margin-right: -50px;
+  margin-right: -110px;
 }
 
 
