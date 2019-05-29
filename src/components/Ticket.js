@@ -5,10 +5,10 @@ import globalContext from "../store/globalContext";
 const TicketItems = ({ img, name, price, quantity, icdel, id, total }) => {
   
   const {
-    state: { cart },
+    state: { order },
     actions: { deleteAllItems, deleteItem }
   } = useContext(globalContext);
-  // console.log(cart);
+  // console.log(order);
 
   // const deleteTicketList = item => {
   //   deleteAllItems(item);
@@ -23,7 +23,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id, total }) => {
       </ul>
 
       <div className="select-product" >
-        {cart.map((item, index) => (
+        {order.map((item, index) => (
           <React.Fragment key={index}>
             <div key={index} className="boxed-ticket-product">
               <div key={name} className="list-name-product">{item.name}</div>
@@ -50,7 +50,7 @@ const TicketItems = ({ img, name, price, quantity, icdel, id, total }) => {
 
       <div className="total-sum-ticket">
         Total ${" "}
-        {cart.reduce((prevValue, currentValue) => {
+        {order.reduce((prevValue, currentValue) => {
           return prevValue + currentValue.total;
         }, 0)}
       </div>
