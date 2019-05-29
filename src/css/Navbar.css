@@ -75,6 +75,8 @@ body {
   margin-top: 84px;
   justify-content: space-between;
   padding-bottom: 40px;
+  height: 485px;
+  overflow: auto;
   
 }
 
@@ -115,7 +117,7 @@ body {
   line-height: 1;
   letter-spacing: normal;
   color: #000000;
-
+  margin-bottom: 7px;
 
 }
 
