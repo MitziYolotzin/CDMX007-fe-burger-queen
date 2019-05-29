@@ -131,7 +131,7 @@ body {
 }
 
 .list-cant-product {
-  margin-top: -23px;
+  margin-top: -20px;
   margin-left: -282px;
 }
 
@@ -147,6 +147,7 @@ body {
   object-fit: contain;
   margin-top: -29px;
   margin-left: 235px;
+  padding-bottom: 16px;
 }
 
 .circle-icon-ticket {
@@ -165,6 +166,14 @@ body {
   background-color: #eeece6;
   margin-top: 6px;
 }
+
+.list-total-product {
+  margin-right: -50px;
+}
+
+
+
+
 
 
 
