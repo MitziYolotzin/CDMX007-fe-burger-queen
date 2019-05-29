@@ -12,8 +12,8 @@ const ComplementComponent = () => {
 
   return (
     <div className="data-button-product">
-      {stateProduct.map((element, index) => (
-        <ButtonsComplementComponent key={index} {...element} />
+      {stateProduct.map((item, index) => (
+        <ButtonsComplementComponent key={index} {...item} />
       ))}
     </div>
   );
