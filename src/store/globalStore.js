@@ -8,14 +8,14 @@ const { Provider } = globalContext;
 
 //Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
-  const [cart, setCart] = useState([]);
-  //const [cartAdd, setCartAdd] = useState([]);
+  const [order, setOrder] = useState([]);
+  //const [orderAdd, setOrderAdd] = useState([]);
 
   const addItem = newItem => {
-    const duplicatedItem = cart.find(({ id }) => newItem.id === id);
+    const duplicatedItem = order.find(({ id }) => newItem.id === id);
 
     if (duplicatedItem) {
-      const newCart = cart.map(item =>
+      const newOrder = order.map(item =>
         item.id === newItem.id
           ? {
               ...item,
@@ -25,9 +25,9 @@ const GlobalStore = ({ children = undefined }) => {
           : item
       );
 
-      setCart(newCart);
+      setOrder(newOrder);
     } else {
-      setCart([...cart, newItem]);
+      setOrder([...order, newItem]);
     }
   };
 
@@ -40,36 +40,36 @@ const GlobalStore = ({ children = undefined }) => {
     if (newItem.item.quantity > 1) {
       newItem.item.quantity = newItem.item.quantity - 1;
       newItem.item.total = newItem.item.total - newItem.item.price;
-      setCart([...cart]);
+      setOrder([...order]);
     } else {
       console.log("last item delete");
-      lastDeleteItem = cart.filter(element => {
+      lastDeleteItem = order.filter(element => {
         return element !== newItem.item;
       });
-      setCart([...lastDeleteItem]);
+      setOrder([...lastDeleteItem]);
     }
   };
 
   //
   const deleteAllItems = () => {
-    setCart([]);
+    setOrder([]);
   };
 
   // Function delete one item, one by one
   // const deleteItem = index => {
-  //   const newCart = [...cart];
-  //   newCart.splice(index, 1);
-  //   setCart(newCart);
+  //   const newOrder = [...order];
+  //   newOrder.splice(index, 1);
+  //   setOrder(newOrder);
 
   // };
 
-  console.log(cart);
+  console.log(order);
   //In provider, values, state variables and function to update the state variable
   return (
     <Provider
       value={{
         state: {
-          cart
+          order
         },
         actions: {
           addItem,
