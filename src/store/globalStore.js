@@ -8,67 +8,64 @@ const { Provider } = globalContext;
 
 //Component GlobalStore
 const GlobalStore = ({ children = undefined }) => {
-
   const [cart, setCart] = useState([]);
   //const [cartAdd, setCartAdd] = useState([]);
 
   const addItem = newItem => {
-   
-    const duplicatedItem= cart.find(({ id }) =>
-    newItem.id === id 
-    )
-    
+    const duplicatedItem = cart.find(({ id }) => newItem.id === id);
+
     if (duplicatedItem) {
-
       const newCart = cart.map(item =>
-        item.id === newItem.id ? {...item, 
-         total: item.total + item.price,
-          quantity: item.quantity + 1} : item
-        )
-       setCart(newCart)      
-    
-  } else {
-    
-    setCart([...cart, newItem])
+        item.id === newItem.id
+          ? {
+              ...item,
+              total: item.total + item.price,
+              quantity: item.quantity + 1
+            }
+          : item
+      );
 
-  }
-}
-  
-
-  // Function delete one item, one by one
-  const deleteItem = index => {
-    const newCart = [...cart];
-    newCart.splice(index, 1);
-    setCart(newCart);
-      
+      setCart(newCart);
+    } else {
+      setCart([...cart, newItem]);
+    }
   };
 
-//
+  //
+  const deleteItem = newItem => {
+    // console.log(newItem.item.quantity)
+    // console.log(newItem.item.total)
+    let lastDeleteItem = [];
 
+    if (newItem.item.quantity > 1) {
+      newItem.item.quantity = newItem.item.quantity - 1;
+      newItem.item.total = newItem.item.total - newItem.item.price;
+      setCart([...cart]);
+    } else {
+      console.log("last item delete");
+      lastDeleteItem = cart.filter(element => {
+        return element !== newItem.item;
+      });
+      setCart([...lastDeleteItem]);
+    }
+  };
 
-
-
-
-
+  //
   const deleteAllItems = () => {
     setCart([]);
   };
 
-  //Function delete same items in ticket
-  // const deleteItem = id => {
-  //   const newCartDel = [...cartDelete];
-  //   newCartDel.filter(index => index !== id )
-  //   setCartDelete (newCartDel);
-  // }
-//{order.filter(index => index !== id )}
-  // const deleteItem = (oneItem) => {
-  //   const newDelItem = cartDelete.filter((_, item) => item !== oneItem);
-  //   setCartDelete (newDelItem);
-  // }
-  console.log(cart)
+  // Function delete one item, one by one
+  // const deleteItem = index => {
+  //   const newCart = [...cart];
+  //   newCart.splice(index, 1);
+  //   setCart(newCart);
+
+  // };
+
+  console.log(cart);
   //In provider, values, state variables and function to update the state variable
   return (
-    
     <Provider
       value={{
         state: {
@@ -83,10 +80,7 @@ const GlobalStore = ({ children = undefined }) => {
     >
       {children}
     </Provider>
-
   );
-
-
 };
 
 export default GlobalStore;

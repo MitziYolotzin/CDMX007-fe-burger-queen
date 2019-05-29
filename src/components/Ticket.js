@@ -23,22 +23,22 @@ const TicketItems = ({ img, name, price, quantity, icdel, id, total }) => {
       </ul>
 
       <div className="select-product" >
-        {cart.map((cart, item) => (
-          <React.Fragment key={item}>
-            <div key={item} className="boxed-ticket-product">
-              <div key={name} className="list-name-product">{cart.name}</div>
-              <div key={total} className="list-total-product">$ {cart.total}</div>
-              <div key={quantity} className="list-cant-product">{cart.quantity}</div>
+        {cart.map((item, index) => (
+          <React.Fragment key={index}>
+            <div key={index} className="boxed-ticket-product">
+              <div key={name} className="list-name-product">{item.name}</div>
+              <div key={total} className="list-total-product">$ {item.total}</div>
+              <div key={quantity} className="list-cant-product">{item.quantity}</div>
 
               <div
                 className="deleteItem"
                 onClick={() =>
-                  deleteItem({ item })
+                  deleteItem({item})
                 }
               >
                 <img
                   className="image-icon-ticket"
-                  src={cart.icdel}
+                  src={item.icdel}
                   alt="imageicon"
                 />
               </div>

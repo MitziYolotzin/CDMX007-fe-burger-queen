@@ -12,8 +12,8 @@ const DrinksComponent = () => {
 
   return (
     <div className="data-button-product">
-      {stateProduct.map((element, index) => (
-        <ButtonsDrinksComponent key={index} {...element} />
+      {stateProduct.map((item, index) => (
+        <ButtonsDrinksComponent key={index} {...item} />
       ))}
     </div>
   );

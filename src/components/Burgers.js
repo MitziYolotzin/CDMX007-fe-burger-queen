@@ -12,8 +12,8 @@ const BurgerComponent = () => {
 
   return (
     <div className="data-button-product">
-      {stateProduct.map((element, index) => (
-        <ButtonsBurgerComponent key={index} {...element} />
+      {stateProduct.map((item, index) => (
+        <ButtonsBurgerComponent key={index} {...item} />
       ))}
     </div>
   );
